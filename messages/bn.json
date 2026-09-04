@@ -1,0 +1,1078 @@
+{
+  "common": {
+    "appName": "GoJobs",
+    "tagline": "বাংলাদেশের বিশ্বস্ত চাকরির বাজার",
+    "search": "অনুসন্ধান",
+    "searchPlaceholder": "চাকরি, কোম্পানি, বা দক্ষতা খুঁজুন...",
+    "loading": "লোড হচ্ছে...",
+    "error": "কিছু একটা ভুল হয়েছে",
+    "retry": "আবার চেষ্টা করুন",
+    "empty": "এখনো কিছু নেই",
+    "save": "সংরক্ষণ",
+    "cancel": "বাতিল",
+    "submit": "জমা দিন",
+    "back": "পিছনে",
+    "next": "পরবর্তী",
+    "viewAll": "সব দেখুন",
+    "learnMore": "আরও জানুন",
+    "edit": "সম্পাদনা",
+    "delete": "মুছুন",
+    "add": "যোগ করুন",
+    "remove": "সরান",
+    "confirm": "নিশ্চিত করুন",
+    "close": "বন্ধ",
+    "saved": "সফলভাবে সংরক্ষিত",
+    "upload": "আপলোড"
+  },
+  "nav": {
+    "jobs": "চাকরি",
+    "companies": "কোম্পানি",
+    "forCandidates": "প্রার্থীদের জন্য",
+    "forEmployers": "নিয়োগকর্তাদের জন্য",
+    "login": "লগ ইন",
+    "signup": "সাইন আপ",
+    "dashboard": "ড্যাশবোর্ড",
+    "logout": "লগ আউট",
+    "more": "আরও",
+    "campus": "ক্যাম্পাস নিয়োগ",
+    "frontline": "ফ্রন্টলাইন চাকরি",
+    "pricing": "মূল্য"
+  },
+  "footer": {
+    "about": "GoJobs সম্পর্কে",
+    "aboutText": "GoJobs প্রমাণ-ভিত্তিক মিলের মাধ্যমে বাংলাদেশের প্রতিভাকে বিশ্বস্ত নিয়োগকর্তার সাথে সংযুক্ত করে।",
+    "candidates": "প্রার্থীদের জন্য",
+    "employers": "নিয়োগকর্তাদের জন্য",
+    "legal": "আইনি",
+    "privacy": "গোপনীয়তা নীতি",
+    "terms": "সেবার শর্তাবলী",
+    "copyright": "© {year} GoJobs. সর্বস্বত্ব সংরক্ষিত।"
+  },
+  "roles": {
+    "public": "পাবলিক",
+    "candidate": "প্রার্থী",
+    "recruiter": "নিয়োগকর্তা",
+    "admin": "অ্যাডমিন",
+    "switchRole": "ভূমিকা পরিবর্তন"
+  },
+  "language": {
+    "en": "English",
+    "bn": "বাংলা",
+    "switchLanguage": "ভাষা পরিবর্তন"
+  },
+  "home": {
+    "heroTitle": "বাংলাদেশে আপনার পরবর্তী সুযোগ খুঁজুন",
+    "heroSubtitle": "বিশ্বস্ত নিয়োগকর্তাদের হাজার হাজার চাকরি অনুসন্ধান করুন। অতিথি হিসেবে আবেদন করুন বা Career Passport তৈরি করুন।",
+    "featuredJobs": "বিশেষ চাকরি",
+    "browseCategories": "বিভাগ অনুযায়ী দেখুন",
+    "browseLocations": "অবস্থান অনুযায়ী দেখুন",
+    "candidateCta": "Career Passport তৈরি করুন",
+    "employerCta": "চাকরি পোস্ট করুন"
+  },
+  "jobs": {
+    "title": "চাকরি অনুসন্ধান",
+    "home": "হোম",
+    "search": "অনুসন্ধান",
+    "searchPlaceholder": "চাকরির শিরোনাম, দক্ষতা, বা কীওয়ার্ড দিয়ে খুঁজুন...",
+    "filters": "ফিল্টার",
+    "clearFilters": "সব মুছুন",
+    "filterLocation": "অবস্থান",
+    "filterDistrict": "জেলা",
+    "filterSalary": "বেতনের পরিসর",
+    "filterWorkMode": "কাজের ধরন",
+    "filterIndustry": "শিল্প",
+    "filterExperience": "অভিজ্ঞতার স্তর",
+    "filterOccupation": "পেশা",
+    "filterGlobal": "অঞ্চল",
+    "allRegions": "সব অঞ্চল",
+    "regionBd": "বাংলাদেশ",
+    "regionRemoteGlobal": "রিমোট (গ্লোবাল)",
+    "regionInternational": "আন্তর্জাতিক",
+    "allLocations": "সব অবস্থান",
+    "allDistricts": "সব জেলা",
+    "allWorkModes": "সব ধরন",
+    "allIndustries": "সব শিল্প",
+    "allExperience": "সব স্তর",
+    "allOccupations": "সব পেশা",
+    "sortBy": "সাজান",
+    "sortRelevance": "প্রাসঙ্গিকতা",
+    "sortDate": "পোস্টের তারিখ",
+    "sortSalary": "বেতন",
+    "resultsCount": "{count}টি চাকরি পাওয়া গেছে",
+    "noResults": "কোনো চাকরি পাওয়া যায়নি",
+    "noResultsDesc": "আরও সুযোগ খুঁজতে আপনার অনুসন্ধান বা ফিল্টার পরিবর্তন করুন।",
+    "posted": "পোস্ট",
+    "applicants": "{count} জন আবেদনকারী",
+    "previous": "পূর্ববর্তী",
+    "next": "পরবর্তী",
+    "description": "চাকরির বিবরণ",
+    "responsibilities": "মূল দায়িত্ব",
+    "hardRequirements": "অবশ্যই থাকতে হবে",
+    "softRequirements": "আশা করা যায়",
+    "required": "আবশ্যক",
+    "preferred": "পছন্দসই",
+    "relatedJobs": "সম্পর্কিত চাকরি",
+    "applyGuest": "অতিথি হিসেবে আবেদন",
+    "applyPassport": "Career Passport দিয়ে আবেদন",
+    "share": "শেয়ার",
+    "copied": "কপি হয়েছে!",
+    "linkCopied": "লিংক ক্লিপবোর্ডে কপি হয়েছে",
+    "viewCompany": "কোম্পানির প্রোফাইল দেখুন",
+    "yourMatch": "এই ভূমিকার জন্য আপনার মিল",
+    "matchScoreNote": "আপনার Career Passport অনুযায়ী, এই ভূমিকার সাথে {score}% প্রাসঙ্গিক overlap আছে।",
+    "workMode": {
+      "on_site": "অফিসে",
+      "hybrid": "হাইব্রিড",
+      "remote": "রিমোট"
+    },
+    "occupation": {
+      "accountant": "হিসাবরক্ষক",
+      "hr_manager": "এইচআর ম্যানেজার",
+      "sales_executive": "সেলস এক্সিকিউটিভ",
+      "rmg_merchandiser": "আরএমজি মার্চেন্ডাইজার",
+      "software_engineer": "সফটওয়্যার ইঞ্জিনিয়ার",
+      "marketing_manager": "মার্কেটিং ম্যানেজার",
+      "operations_manager": "অপারেশনস ম্যানেজার",
+      "customer_service": "কাস্টমার সার্ভিস"
+    },
+    "seniority": {
+      "entry": "প্রাথমিক স্তর",
+      "mid": "মধ্য স্তর",
+      "senior": "সিনিয়র",
+      "lead": "লিড",
+      "manager": "ম্যানেজার"
+    },
+    "industry": {
+      "banking": "ব্যাংকিং ও ফাইন্যান্স",
+      "rmg": "আরএমজি ও গার্মেন্টস",
+      "ngo": "এনজিও ও উন্নয়ন",
+      "technology": "প্রযুক্তি",
+      "manufacturing": "উৎপাদন",
+      "retail": "রিটেইল ও এফএমসিজি",
+      "healthcare": "স্বাস্থ্যসেবা",
+      "education": "শিক্ষা"
+    }
+  },
+  "companies": {
+    "title": "কোম্পানি",
+    "subtitle": "বাংলাদেশ জুড়ে বিশ্বস্ত নিয়োগকর্তাদের অন্বেষণ করুন",
+    "home": "হোম",
+    "openJobs": "{count}টি খোলা চাকরি",
+    "openPositions": "খোলা পদ",
+    "noOpenJobs": "এই মুহূর্তে কোনো খোলা পদ নেই।",
+    "size": "{size} কর্মী",
+    "employees": "{count} কর্মী",
+    "founded": "প্রতিষ্ঠিত {year}",
+    "industry": {
+      "banking": "ব্যাংকিং ও ফাইন্যান্স",
+      "rmg": "আরএমজি ও গার্মেন্টস",
+      "ngo": "এনজিও ও উন্নয়ন",
+      "technology": "প্রযুক্তি",
+      "manufacturing": "উৎপাদন",
+      "retail": "রিটেইল ও এফএমসিজি",
+      "healthcare": "স্বাস্থ্যসেবা",
+      "education": "শিক্ষা"
+    }
+  },
+  "apply": {
+    "title": "এই চাকরিতে আবেদন করুন",
+    "step": "ধাপ {current} / {total}",
+    "personalInfo": "ব্যক্তিগত তথ্য",
+    "personalInfoDesc": "নিয়োগকর্তা যাতে আপনার সাথে যোগাযোগ করতে পারেন, আপনার যোগাযোগের তথ্য দিন।",
+    "fullName": "পূর্ণ নাম",
+    "email": "ইমেইল ঠিকানা",
+    "phone": "ফোন নম্বর",
+    "cvUpload": "আপনার সিভি আপলোড করুন",
+    "cvUploadDesc": "আপনার রেজিউমে বা সিভি আপলোড করুন। এটি একটি ডেমো — কোনো ফাইল আসলে আপলোড হয় না।",
+    "uploadCv": "সিভি আপলোড করতে ক্লিক করুন",
+    "cvFormats": "PDF, DOC, বা DOCX",
+    "screening": "স্ক্রিনিং প্রশ্ন",
+    "screeningDesc": "নিয়োগকর্তার কিছু প্রশ্নের উত্তর দিন।",
+    "coverNote": "কভার নোট",
+    "coverNoteDesc": "ঐচ্ছিক — নিয়োগকর্তাকে বলুন কেন আপনি এই ভূমিকায় আগ্রহী।",
+    "coverNotePlaceholder": "আমি এই ভূমিকায় আগ্রহী কারণ...",
+    "reviewSubmit": "পর্যালোচনা ও জমা",
+    "reviewSubmitDesc": "আপনার আবেদন পর্যালোচনা করুন এবং সম্মতি নিশ্চিত করুন।",
+    "consentText": "আমি নিয়োগের উদ্দেশ্যে এই নিয়োগকর্তার সাথে আমার তথ্য শেয়ার করতে সম্মত। আমি বুঝি GoJobs আমার যোগ্যতা যাচাই করে না।",
+    "back": "পিছনে",
+    "next": "পরবর্তী",
+    "submit": "আবেদন জমা দিন",
+    "submitting": "জমা দেওয়া হচ্ছে...",
+    "successTitle": "আবেদন জমা হয়েছে!",
+    "successDesc": "{job} এর জন্য আপনার আবেদন গৃহীত হয়েছে।",
+    "referenceId": "আপনার রেফারেন্স আইডি",
+    "successNote": "আপনার আবেদন ট্র্যাক করতে এই রেফারেন্স আইডি সংরক্ষণ করুন। নিয়োগকর্তা শীঘ্রই আপনার জমা পর্যালোচনা করবেন।",
+    "createAccount": "Career Passport তৈরি করুন",
+    "backToJob": "চাকরিতে ফিরে যান"
+  },
+  "evidence": {
+    "candidate_provided": "প্রার্থী প্রদত্ত",
+    "cv_extracted": "সিভি থেকে নিষ্কাশিত",
+    "assessment_derived": "মূল্যায়ন প্রমাণ",
+    "interview_derived": "সাক্ষাৎকার প্রমাণ",
+    "recruiter_entered": "নিয়োগকর্তা প্রদত্ত"
+  },
+  "match": {
+    "strong": "শক্তিশালী",
+    "moderate": "মাঝারি",
+    "limited": "সীমিত",
+    "none": "নেই",
+    "dimensions": "মিলের মাত্রা",
+    "eligible": "আপনার পর্যাপ্ত প্রাসঙ্গিক overlap আছে General Assessment সম্পূর্ণ করার জন্য",
+    "assessFit": "আমার উপযুক্ততা যাচাই করুন",
+    "matchPercent": "{score}% মিল"
+  },
+  "shell": {
+    "comingSoon": "পরবর্তী পর্যায়ে আসছে",
+    "placeholder": "এই বৈশিষ্ট্যটি পরবর্তী পর্যায়ে তৈরি করা হবে।"
+  },
+  "auth": {
+    "loginTitle": "আবার স্বাগতম",
+    "loginSubtitle": "আপনার GoJobs অ্যাকাউন্টে সাইন ইন করুন",
+    "signupTitle": "অ্যাকাউন্ট তৈরি করুন",
+    "signupSubtitle": "সুযোগ খুঁজতে বা প্রতিভা নিয়োগ করতে GoJobs-এ যোগ দিন",
+    "email": "ইমেইল ঠিকানা",
+    "emailPlaceholder": "you@example.com",
+    "password": "পাসওয়ার্ড",
+    "passwordPlaceholder": "যেকোনো পাসওয়ার্ড (ডেমো)",
+    "name": "পূর্ণ নাম",
+    "namePlaceholder": "আপনার পূর্ণ নাম",
+    "loginButton": "লগ ইন",
+    "signupButton": "অ্যাকাউন্ট তৈরি",
+    "orDivider": "অথবা",
+    "demoUsers": "দ্রুত ডেমো লগইন",
+    "noAccount": "অ্যাকাউন্ট নেই?",
+    "hasAccount": "ইতিমধ্যে অ্যাকাউন্ট আছে?",
+    "roleLabel": "আমি যোগ দিচ্ছি",
+    "roleCandidate": "চাকরি প্রার্থী (Candidate)",
+    "roleEmployer": "নিয়োগকর্তা (Recruiter)",
+    "demoNote": "এটি একটি ডেমো — যেকোনো ইমেইল ও পাসওয়ার্ড কাজ করবে।",
+    "demoAccountsHint": "নিচের যেকোনো অ্যাকাউন্টে ক্লিক করুন। অথবা হেডারের role switcher ব্যবহার করুন।"
+  },
+  "candidate": {
+    "nav": {
+      "dashboard": "ড্যাশবোর্ড",
+      "passport": "Career Passport",
+      "applications": "আবেদন",
+      "saved": "সংরক্ষিত চাকরি",
+      "onboarding": "অনবোর্ডিং",
+      "interviews": "ইন্টারভিউ",
+      "agent": "ক্যারিয়ার এজেন্ট"
+    },
+    "dashboard": {
+      "title": "প্রার্থী ড্যাশবোর্ড",
+      "welcome": "স্বাগতম, {name}",
+      "stats": {
+        "applications": "সক্রিয় আবেদন",
+        "completeness": "প্রোফাইল সম্পূর্ণতা",
+        "saved": "সংরক্ষিত চাকরি"
+      },
+      "recommended": "আপনার জন্য প্রস্তাবিত",
+      "recommendedSubtitle": "Career Passport-এর সাথে মিলে যাওয়া চাকরি",
+      "quickActions": "দ্রুত কাজ",
+      "editPassport": "Career Passport সম্পাদনা",
+      "viewApplications": "আবেদন দেখুন",
+      "completeOnboarding": "অনবোর্ডিং সম্পূর্ণ করুন"
+    },
+    "passport": {
+      "title": "Career Passport",
+      "subtitle": "আপনার পেশাগত প্রোফাইল — প্রমাণ-ট্যাগ সহ",
+      "tabs": {
+        "identity": "পরিচয়",
+        "experience": "অভিজ্ঞতা",
+        "education": "শিক্ষা",
+        "skills": "দক্ষতা",
+        "preferences": "পছন্দ"
+      },
+      "identity": {
+        "headline": "পেশাগত শিরোনাম",
+        "summary": "সারাংশ",
+        "phone": "ফোন",
+        "email": "ইমেইল",
+        "visibility": "প্রোফাইল দৃশ্যমানতা",
+        "visibilityActivelyLooking": "সক্রিয়ভাবে খুঁজছি",
+        "visibilityOpen": "সুযোগের জন্য উন্মুক্ত",
+        "visibilityPrivate": "ব্যক্তিগত",
+        "visibilityHelp": "কে আপনার প্রোফাইল খুঁজে পাবে তা নিয়ন্ত্রণ করে"
+      },
+      "experience": {
+        "title": "চাকরির শিরোনাম",
+        "company": "কোম্পানি",
+        "location": "অবস্থান",
+        "startDate": "শুরুর তারিখ",
+        "endDate": "শেষ তারিখ",
+        "current": "বর্তমানে এখানে কাজ করছি",
+        "responsibilities": "দায়িত্ব",
+        "achievements": "অর্জন",
+        "addExperience": "অভিজ্ঞতা যোগ করুন",
+        "noExperience": "এখনো কোনো অভিজ্ঞতা যোগ করা হয়নি"
+      },
+      "education": {
+        "institution": "প্রতিষ্ঠান",
+        "degree": "ডিগ্রি",
+        "field": "বিষয়",
+        "startDate": "শুরুর বছর",
+        "endDate": "শেষ বছর",
+        "current": "বর্তমানে পড়ছি",
+        "addEducation": "শিক্ষা যোগ করুন",
+        "noEducation": "এখনো কোনো শিক্ষা যোগ করা হয়নি"
+      },
+      "skills": {
+        "name": "দক্ষতার নাম",
+        "level": "দক্ষতার স্তর",
+        "levels": {
+          "beginner": "শিক্ষানবিশ",
+          "intermediate": "মাঝারি",
+          "advanced": "উন্নত",
+          "expert": "বিশেষজ্ঞ"
+        },
+        "addSkill": "দক্ষতা যোগ করুন",
+        "noSkills": "এখনো কোনো দক্ষতা যোগ করা হয়নি"
+      },
+      "preferences": {
+        "desiredRoles": "কাঙ্ক্ষিত ভূমিকা",
+        "desiredRolesPlaceholder": "যেমন: Senior Accountant, Tax Consultant",
+        "salaryMin": "ন্যূনতম বেতন (BDT/মাস)",
+        "salaryMax": "সর্বোচ্চ বেতন (BDT/মাস)",
+        "locations": "পছন্দের অবস্থান",
+        "workMode": "কাজের ধরন",
+        "workModes": {
+          "on_site": "অফিসে",
+          "hybrid": "হাইব্রিড",
+          "remote": "রিমোট"
+        },
+        "noticePeriod": "নোটিশ পিরিয়ড (দিন)",
+        "globalTitle": "গ্লোবাল ট্যালেন্ট পছন্দ",
+        "country": "দেশ",
+        "timezone": "টাইমজোন",
+        "workAuthorization": "কাজের অনুমোদন",
+        "workAuthorizationPlaceholder": "যেমন: বাংলাদেশ, UAE, Remote",
+        "openToRemoteGlobal": "গ্লোবাল রিমোট সুযোগে আগ্রহী"
+      },
+      "saved": "Passport সংরক্ষিত",
+      "completeness": "{percent}% সম্পূর্ণ"
+    },
+    "onboarding": {
+      "title": "Career Passport সেট আপ করুন",
+      "subtitle": "আপনার CV আপলোড করুন, আমরা প্রোফাইল তৈরিতে সাহায্য করব",
+      "steps": {
+        "upload": "CV আপলোড",
+        "review": "নিষ্কাশন পর্যালোচনা",
+        "confirm": "বিবরণ নিশ্চিত",
+        "preferences": "পছন্দ সেট করুন"
+      },
+      "upload": {
+        "title": "আপনার CV আপলোড করুন",
+        "description": "আমরা স্বয়ংক্রিয়ভাবে আপনার অভিজ্ঞতা, শিক্ষা ও দক্ষতা নিষ্কাশন করব।",
+        "dropzone": "CV এখানে টেনে আনুন, অথবা ব্রাউজ করতে ক্লিক করুন",
+        "formats": "PDF, DOC, DOCX (ডেমো — যেকোনো ফাইল কাজ করবে)",
+        "uploaded": "CV আপলোড হয়েছে: {filename}",
+        "processing": "তথ্য নিষ্কাশন হচ্ছে..."
+      },
+      "review": {
+        "title": "নিষ্কাশিত তথ্য পর্যালোচনা",
+        "description": "আমরা আপনার CV থেকে প্রোফাইল পূরণ করেছি। প্রয়োজনে সম্পাদনা করুন।",
+        "sourceNote": "ব্যাজযুক্ত ক্ষেত্রগুলো দেখায় তথ্য কোথা থেকে এসেছে"
+      },
+      "confirm": {
+        "title": "আপনার বিবরণ নিশ্চিত করুন",
+        "description": "চালিয়ে যাওয়ার আগে সবকিছু সঠিক কিনা দেখুন।"
+      },
+      "preferences": {
+        "title": "চাকরির পছন্দ সেট করুন",
+        "description": "সঠিক সুযোগ সুপারিশ করতে আমাদের সাহায্য করুন।"
+      },
+      "complete": "সেটআপ সম্পূর্ণ",
+      "completed": "আপনার Career Passport প্রস্তুত!"
+    },
+    "applications": {
+      "title": "আমার আবেদন",
+      "subtitle": "চাকরির আবেদন ও পাইপলাইন স্ট্যাটাস ট্র্যাক করুন",
+      "empty": "এখনো কোনো আবেদন নেই",
+      "emptyDescription": "চাকরি ব্রাউজ করুন ও আবেদন শুরু করুন।",
+      "browseJobs": "চাকরি ব্রাউজ করুন",
+      "appliedAt": "আবেদন {date}",
+      "stages": {
+        "applied": "আবেদন করা",
+        "reviewed": "পর্যালোচনাধীন",
+        "screening": "স্ক্রিনিং",
+        "general_assessment": "General Assessment",
+        "ai_interview": "AI সাক্ষাৎকার",
+        "human_interview": "সাক্ষাৎকার",
+        "employer_checks": "নিয়োগকর্তা যাচাই",
+        "offer": "অফার",
+        "hired": "নিয়োগ",
+        "rejected": "নির্বাচিত নন"
+      },
+      "detail": {
+        "title": "আবেদনের বিবরণ",
+        "timeline": "আবেদন টাইমলাইন",
+        "currentStage": "বর্তমান পর্যায়",
+        "matchDimensions": "এই ভূমিকার সাথে আপনার মিল",
+        "notes": "নিয়োগকর্তার নোট",
+        "viewJob": "চাকরির পোস্টিং দেখুন"
+      }
+    },
+    "assessment": {
+      "title": "General Assessment",
+      "confirmPassport": "Career Passport নিশ্চিত করুন",
+      "confirmPassportDescription": "এই মূল্যায়নের প্রসঙ্গে আমরা আপনার passport ডেটা ব্যবহার করব। শুরু করার আগে মূল বিবরণ পর্যালোচনা করুন।",
+      "startAssessment": "মূল্যায়ন শুরু",
+      "question": "প্রশ্ন {current} / {total}",
+      "submitAnswers": "উত্তর জমা দিন",
+      "results": "মূল্যায়নের ফলাফল",
+      "outcomes": {
+        "strong_fit": "শক্তিশালী মিল",
+        "moderate_fit": "মাঝারি মিল",
+        "limited_fit": "সীমিত মিল"
+      },
+      "alreadyCompleted": "মূল্যায়ন সম্পূর্ণ",
+      "viewResults": "ফলাফল দেখুন"
+    },
+    "saved": {
+      "title": "সংরক্ষিত চাকরি",
+      "subtitle": "পরে দেখার জন্য বুকমার্ক করা চাকরি",
+      "empty": "কোনো সংরক্ষিত চাকরি নেই",
+      "emptyDescription": "ব্রাউজ করার সময় চাকরি সংরক্ষণ করুন।",
+      "unsave": "সরান",
+      "browseJobs": "চাকরি ব্রাউজ করুন"
+    }
+  },
+  "employer": {
+    "nav": {
+      "dashboard": "ড্যাশবোর্ড",
+      "talentSearch": "ট্যালেন্ট অনুসন্ধান",
+      "assessments": "অ্যাসেসমেন্ট",
+      "interviews": "ইন্টারভিউ",
+      "agent": "হায়ারিং এজেন্ট",
+      "enterprise": "এন্টারপ্রাইজ",
+      "postJob": "চাকরি পোস্ট"
+    },
+    "guard": {
+      "title": "নিয়োগকর্তা অ্যাক্সেস প্রয়োজন",
+      "description": "নিয়োগকর্তা টুল ব্যবহার করতে Recruiter ভূমিকায় স্যুইচ করুন বা লগ ইন করুন।",
+      "login": "লগ ইন"
+    },
+    "onboarding": {
+      "title": "নিয়োগকর্তা অনবোর্ডিং",
+      "subtitle": "GoJobs-এ চাকরি পোস্ট করতে আপনার কোম্পানি সম্পর্কে জানান।",
+      "companyInfo": "কোম্পানির তথ্য",
+      "companyInfoDescription": "এই তথ্য যাচাইকরণ এবং পাবলিক প্রোফাইলের জন্য ব্যবহৃত হয়।",
+      "companyName": "কোম্পানির নাম",
+      "industry": "শিল্প",
+      "size": "কোম্পানির আকার",
+      "location": "প্রধান অফিসের অবস্থান",
+      "website": "ওয়েবসাইট",
+      "description": "কোম্পানির বিবরণ",
+      "submit": "যাচাইয়ের জন্য জমা দিন",
+      "locationRequired": "বিভাগ ও জেলা নির্বাচন করুন",
+      "submitted": "কোম্পানি প্রোফাইল জমা হয়েছে। যাচাইকরণ মুলতুবি।",
+      "trustStatus": "যাচাইকরণ স্থিতি",
+      "trustDescription": "চাকরি প্রকাশের আগে GoJobs নিয়োগকর্তাদের যাচাই করে।",
+      "simulateApproval": "অনুমোদন সিমুলেট (ডেমো)",
+      "approved": "আপনার কোম্পানি যাচাইকৃত!",
+      "goToDashboard": "ড্যাশবোর্ডে যান",
+      "industries": {
+        "banking": "ব্যাংকিং ও ফাইন্যান্স",
+        "rmg": "RMG ও টেক্সটাইল",
+        "ngo": "এনজিও ও উন্নয়ন",
+        "technology": "প্রযুক্তি",
+        "manufacturing": "উৎপাদন",
+        "retail": "রিটেইল ও FMCG",
+        "healthcare": "স্বাস্থ্যসেবা",
+        "education": "শিক্ষা"
+      }
+    },
+    "dashboard": {
+      "title": "নিয়োগকর্তা ড্যাশবোর্ড",
+      "subtitle": "খোলা পদ ও নিয়োগ ফানেলের সারসংক্ষেপ।",
+      "postJob": "চাকরি পোস্ট করুন",
+      "companySettings": "কোম্পানি সেটিংস",
+      "openJobs": "খোলা চাকরি",
+      "openJobsDescription": "প্রকাশিত পদ ও আবেদনকারীর সংখ্যা।",
+      "noJobs": "এখনো কোনো খোলা চাকরি নেই।",
+      "applicants": "{count} আবেদনকারী",
+      "viewApplicants": "আবেদনকারী দেখুন",
+      "funnel": {
+        "total": "মোট আবেদনকারী",
+        "matched50": "≥৫০% overlap",
+        "assessmentsDone": "মূল্যায়ন সম্পন্ন",
+        "recommended": "সুপারিশকৃত"
+      },
+      "workMode": {
+        "on_site": "অন-সাইট",
+        "hybrid": "হাইব্রিড",
+        "remote": "রিমোট"
+      }
+    },
+    "jobCreation": {
+      "title": "চাকরি তৈরি করুন",
+      "subtitle": "বিবরণ পূরণ করুন বা Job Copilot ব্যবহার করুন।",
+      "jobDetails": "চাকরির বিবরণ",
+      "saveDraft": "ড্রাফট সংরক্ষণ",
+      "publish": "প্রকাশ",
+      "draftSaved": "ড্রাফট সংরক্ষিত",
+      "published": "চাকরি সফলভাবে প্রকাশিত",
+      "untitled": "শিরোনামহীন চাকরি",
+      "previewBadge": "প্রিভিউ",
+      "editForm": "ফর্ম সম্পাদনা",
+      "tabs": {
+        "form": "ফর্ম",
+        "preview": "প্রিভিউ"
+      },
+      "fields": {
+        "title": "চাকরির শিরোনাম",
+        "occupation": "পেশা",
+        "seniority": "সিনিয়রিটি",
+        "description": "বিবরণ",
+        "hardRequirements": "কঠিন প্রয়োজনীয়তা",
+        "softRequirements": "নরম প্রয়োজনীয়তা",
+        "salaryMin": "ন্যূনতম বেতন (BDT)",
+        "salaryMax": "সর্বোচ্চ বেতন (BDT)",
+        "location": "অবস্থান",
+        "workMode": "কাজের ধরন",
+        "responsibilities": "দায়িত্ব",
+        "screeningQuestions": "স্ক্রিনিং প্রশ্ন"
+      },
+      "occupations": {
+        "accountant": "হিসাবরক্ষক",
+        "hr_manager": "HR ম্যানেজার",
+        "sales_executive": "সেলস এক্সিকিউটিভ",
+        "rmg_merchandiser": "RMG মার্চেন্ডাইজার",
+        "software_engineer": "সফটওয়্যার ইঞ্জিনিয়ার",
+        "marketing_manager": "মার্কেটিং ম্যানেজার",
+        "operations_manager": "অপারেশনস ম্যানেজার",
+        "customer_service": "কাস্টমার সার্ভিস"
+      },
+      "seniorities": {
+        "entry": "এন্ট্রি লেভেল",
+        "mid": "মিড লেভেল",
+        "senior": "সিনিয়র",
+        "lead": "লিড",
+        "manager": "ম্যানেজার"
+      },
+      "workModes": {
+        "on_site": "অন-সাইট",
+        "hybrid": "হাইব্রিড",
+        "remote": "রিমোট"
+      },
+      "copilot": {
+        "title": "Job Copilot",
+        "welcome": "যে পদে নিয়োগ দিতে চান বর্ণনা করুন। চেষ্টা করুন: \"senior HR for garment factory\"",
+        "placeholder": "পদ বর্ণনা করুন...",
+        "thinking": "চিন্তা করছি...",
+        "applied": "\"{title}\"-এর জন্য ফর্ম পূরণ করেছি। পর্যালোচনা করে সমন্বয় করুন।",
+        "noMatch": "বর্ণনা মেলেনি। পদের ধরন ও শিল্প উল্লেখ করুন।",
+        "hint": "ডেমো: \"senior HR for garment factory\", \"backend engineer fintech\", বা \"sales executive fmcg\" চেষ্টা করুন"
+      }
+    },
+    "jobDetail": {
+      "notFound": "চাকরি পাওয়া যায়নি",
+      "viewApplicants": "আবেদনকারী দেখুন",
+      "publicListing": "পাবলিক তালিকা",
+      "overview": "সংক্ষিপ্ত বিবরণ",
+      "salary": "বেতন",
+      "workMode": "কাজের ধরন",
+      "responsibilities": "দায়িত্ব",
+      "requirements": "প্রয়োজনীয়তা",
+      "requirementsDescription": "এই পদের dimensional প্রয়োজনীয়তা",
+      "stats": {
+        "totalApplicants": "মোট আবেদনকারী",
+        "matched50": "≥৫০% overlap",
+        "inPipeline": "পাইপলাইনে"
+      },
+      "status": {
+        "draft": "ড্রাফট",
+        "published": "প্রকাশিত",
+        "closed": "বন্ধ"
+      },
+      "workModes": {
+        "on_site": "অন-সাইট",
+        "hybrid": "হাইব্রিড",
+        "remote": "রিমোট"
+      }
+    },
+    "ats": {
+      "title": "আবেদনকারী",
+      "subtitle": "পাইপলাইনে {count} প্রার্থী",
+      "kanban": "কানবান",
+      "table": "টেবিল",
+      "filters": "ফিল্টার",
+      "filterStage": "পর্যায়",
+      "filterMatch": "মিলের থreshold",
+      "allStages": "সব পর্যায়",
+      "matchAll": "সব overlap স্তর",
+      "match50": "≥৫০% overlap",
+      "match70": "≥৭০% overlap",
+      "jobNotFound": "চাকরি পাওয়া যায়নি",
+      "noApplicants": "ফিল্টারে কোনো আবেদনকারী নেই",
+      "dimensionCount": "{count} মিলের মাত্রা",
+      "overlap": "{percent}% overlap",
+      "columns": {
+        "name": "প্রার্থী",
+        "stage": "পর্যায়",
+        "overlap": "Overlap",
+        "dimensions": "মাত্রা",
+        "applied": "আবেদন"
+      },
+      "stages": {
+        "applied": "আবেদন",
+        "reviewed": "পর্যালোচিত",
+        "screening": "স্ক্রিনিং",
+        "general_assessment": "General Assessment",
+        "ai_interview": "AI Interview",
+        "human_interview": "Human Interview",
+        "employer_checks": "Employer Checks",
+        "offer": "Offer",
+        "hired": "নিয়োগ"
+      }
+    },
+    "review": {
+      "notFound": "আবেদন পাওয়া যায়নি",
+      "backToAts": "আবেদনকারীতে ফিরুন",
+      "unknownCandidate": "অজানা প্রার্থী",
+      "noHeadline": "কোনো headline নেই",
+      "passportSummary": "Career Passport",
+      "guestApplicant": "অতিথি আবেদনকারী",
+      "completeness": "{percent}% সম্পূর্ণ",
+      "screeningAnswers": "স্ক্রিনিং উত্তর",
+      "dimensionalMatch": "Dimensional match",
+      "dimensionalMatchDescription": "প্রমাণ-ভিত্তিক overlap — কোনো একক স্কোর নেই।",
+      "noDimensions": "এখনো মিলের মাত্রা নেই",
+      "actions": "দ্রুত কর্ম",
+      "moveStage": "পর্যায় পরিবর্তন",
+      "addNote": "নোট যোগ",
+      "existingNotes": "নিয়োগকর্তার নোট",
+      "noteAdded": "নোট যোগ হয়েছে",
+      "stageUpdated": "পর্যায় আপডেট হয়েছে",
+      "gaResults": "General Assessment ফলাফল",
+      "gaQuestions": "Assessment Q&A",
+      "gaQuestionsDescription": "সম্পন্ন assessment-এ প্রার্থীর উত্তর",
+      "noAssessment": "এখনো assessment সম্পন্ন হয়নি",
+      "duration": "{minutes} মিনিট",
+      "evidence": "প্রমাণের উৎস",
+      "activityTimeline": "কার্যকলাপ টাইমলাইন",
+      "overlapBadge": "{percent}% overlap",
+      "prevApplicant": "আগের আবেদনকারী",
+      "nextApplicant": "পরের আবেদনকারী",
+      "tabs": {
+        "overview": "ওভারভিউ",
+        "application": "আবেদন",
+        "match": "Match & Fit",
+        "assessments": "Assessments",
+        "evidence": "প্রমাণ",
+        "activity": "কার্যকলাপ"
+      },
+      "applicationSummary": "আবেদন সারাংশ",
+      "appliedDate": "আবেদন",
+      "source": "উৎস",
+      "currentStage": "বর্তমান পর্যায়",
+      "sources": {
+        "gojobs": "GoJobs",
+        "referral": "রেফারেল",
+        "job_board": "জব বোর্ড",
+        "direct": "সরাসরি"
+      },
+      "expectations": "প্রত্যাশা",
+      "salaryExpectation": "বেতন প্রত্যাশা",
+      "noticePeriod": "নোটিশ সময়",
+      "availability": "উপলব্ধতা",
+      "location": "অবস্থান",
+      "days": "দিন",
+      "quickMatch": "দ্রুত match সারাংশ",
+      "coverNote": "কভার নোট",
+      "consentRecorded": "আবেদন সম্মতি {date}-এ রেকর্ড",
+      "matchExplanation": "Match ব্যাখ্যা",
+      "metRequirements": "পূরণ করা requirements",
+      "unmetRequirements": "Gap বা অনিশ্চয়তা",
+      "talentGraph": "Talent graph",
+      "talentGraphDescription": "Confidence, recency ও evidence source সহ competency",
+      "uploadedDocuments": "আপলোড করা নথি",
+      "uploadedAt": "আপলোড {date}",
+      "candidateProvidedDisclaimer": "প্রার্থী প্রদত্ত — GoJobs যাচাই করেনি",
+      "portfolio": "পোর্টফোলিও ও work samples",
+      "inviteAssessment": "Assessment আমন্ত্রণ",
+      "inviteAssessmentMock": "Assessment আমন্ত্রণ পাঠানো (ডেমো)",
+      "scheduleInterview": "ইন্টারভিউ শিডিউল",
+      "scheduleInterviewMock": "ইন্টারভিউ শিডিউলার খোলা (ডেমো)",
+      "roleAssessmentType": {
+        "mcq": "Multiple choice",
+        "short_answer": "Short answer"
+      },
+      "cv": {
+        "title": "CV",
+        "contact": "যোগাযোগ",
+        "summary": "Professional summary",
+        "download": "CV ডাউনলোড",
+        "downloadMock": "{filename} ডাউনলোড শুরু (ডেমো — ফাইল নেই)",
+        "showCv": "CV দেখুন",
+        "hideCv": "CV লুকান",
+        "sourceDisclaimer": "প্রার্থী প্রদত্ত — GoJobs যাচাই করেনি",
+        "noExtractedSummary": "আপলোড করা CV থেকে summary নেই।"
+      },
+      "timeline": {
+        "applied": "আবেদন জমা",
+        "stageChanged": "{stage}-এ স্থানান্তর",
+        "assessmentCompleted": "General Assessment সম্পন্ন"
+      },
+      "outcomes": {
+        "strong_fit": "শক্তিশালী মিল",
+        "moderate_fit": "মাঝারি মিল",
+        "limited_fit": "সীমিত মিল"
+      },
+      "stages": {
+        "applied": "আবেদন",
+        "reviewed": "পর্যালোচিত",
+        "screening": "স্ক্রিনিং",
+        "general_assessment": "General Assessment",
+        "ai_interview": "AI Interview",
+        "human_interview": "Human Interview",
+        "employer_checks": "Employer Checks",
+        "offer": "Offer",
+        "hired": "নিয়োগ"
+      }
+    }
+  },
+  "admin": {
+    "title": "অ্যাডমিন ড্যাশবোর্ড",
+    "subtitle": "প্ল্যাটফর্ম ওভারভিউ, মডারেশন ও যাচাইকরণ",
+    "accessDenied": "অ্যাক্সেস অস্বীকৃত",
+    "accessDeniedHint": "এই পৃষ্ঠা দেখতে অ্যাডমিন অধিকার প্রয়োজন।",
+    "login": "অ্যাডমিন হিসেবে লগ ইন",
+    "backHome": "হোমে ফিরুন",
+    "stats": {
+      "jobs": "প্রকাশিত চাকরি",
+      "jobsDesc": "মার্কেটপ্লেসে সক্রিয় তালিকা",
+      "companies": "কোম্পানি",
+      "companiesDesc": "GoJobs-এ নিবন্ধিত নিয়োগকর্তা",
+      "applications": "আবেদন",
+      "applicationsDesc": "মোট প্রার্থী আবেদন",
+      "pendingReviews": "মুলতুবি যাচাই",
+      "pendingReviewsDesc": "যাচাইয়ের অপেক্ষায় নিয়োগকর্তা"
+    },
+    "moderation": {
+      "title": "চাকরি মডারেশন",
+      "description": "পর্যালোচনার জন্য ফ্ল্যাগ করা চাকরি",
+      "empty": "এখন কোনো ফ্ল্যাগ করা চাকরি নেই",
+      "job": "চাকরি",
+      "company": "কোম্পানি",
+      "salary": "বেতন",
+      "flags": "ফ্ল্যাগ",
+      "applicants": "আবেদনকারী",
+      "actions": "কর্ম",
+      "review": "পর্যালোচনা",
+      "reasons": {
+        "unverified_employer": "অযাচাইকৃত নিয়োগকর্তা",
+        "salary_mismatch": "বেতন অমিল",
+        "high_applicants": "উচ্চ আবেদনকারী",
+        "duplicate_title": "ডুপ্লিকেট শিরোনাম"
+      }
+    },
+    "trust": {
+      "title": "যাচাইকরণ সারি",
+      "description": "যাচাইয়ের অপেক্ষায় নিয়োগকর্তা",
+      "empty": "কোনো মুলতুবি যাচাই নেই",
+      "company": "কোম্পানি",
+      "industry": "শিল্প",
+      "size": "আকার",
+      "founded": "প্রতিষ্ঠিত",
+      "status": "স্থিতি",
+      "actions": "কর্ম",
+      "pending": "মুলতুবি",
+      "view": "প্রোফাইল দেখুন",
+      "review": "পর্যালোচনা"
+    }
+  },
+  "billing": {
+    "title": "বিলিং",
+    "subtitle": "সাবস্ক্রিপশন ও ইনভয়েস পরিচালনা",
+    "changePlan": "প্ল্যান পরিবর্তন",
+    "perMonth": "মাস",
+    "currentPlan": {
+      "title": "বর্তমান প্ল্যান",
+      "description": "আপনার সক্রিয় সাবস্ক্রিপশন",
+      "active": "সক্রিয়",
+      "renews": "নবায়ন"
+    },
+    "plans": {
+      "starter": "Starter",
+      "growth": "Growth",
+      "enterprise": "Enterprise"
+    },
+    "paymentMethod": {
+      "title": "পেমেন্ট পদ্ধতি",
+      "bkash": "bKash (ডেমো)",
+      "update": "পেমেন্ট পদ্ধতি আপডেট"
+    },
+    "usage": {
+      "title": "এই মেয়াদে ব্যবহার",
+      "description": "প্ল্যান সীমা ট্র্যাক করুন",
+      "jobPosts": "চাকরি পোস্ট",
+      "featured": "ফিচার্ড স্লট",
+      "teamSeats": "টিম সিট"
+    },
+    "invoices": {
+      "title": "ইনভয়েস ইতিহাস",
+      "description": "পূর্বের ইনভয়েস ডাউনলোড",
+      "id": "ইনভয়েস ID",
+      "date": "তারিখ",
+      "amount": "পরিমাণ",
+      "status": "স্থিতি",
+      "download": "ডাউনলোড",
+      "statuses": {
+        "paid": "পরিশোধিত",
+        "pending": "মুলতুবি",
+        "failed": "ব্যর্থ"
+      }
+    }
+  },
+  "pricing": {
+    "title": "মূল্য",
+    "subtitle": "সব আকারের নিয়োগকর্তার জন্য নমনীয় প্ল্যান",
+    "tabs": {
+      "packages": "চাকরি প্যাকেজ",
+      "subscriptions": "সাবস্ক্রিপশন"
+    },
+    "popular": "জনপ্রিয়",
+    "oneTime": "এককালীন",
+    "perMonth": "মাস",
+    "getStarted": "শুরু করুন",
+    "subscribe": "সাবস্ক্রাইব",
+    "footnote": "সব মূল্য BDT-তে। ডেমো মূল্য — কোনো প্রকৃত চার্জ নেই।",
+    "features": {
+      "posts": "{count}টি চাকরি পোস্ট",
+      "daysActive": "{days} দিন সক্রিয়",
+      "applicantTracking": "আবেদনকারী ট্র্যাকিং",
+      "featured": "{count}টি ফিচার্ড স্লট",
+      "teamSeats": "{count}টি টিম সিট",
+      "prioritySupport": "অগ্রাধিকার সাপোর্ট"
+    },
+    "packages": {
+      "single": {
+        "name": "একক পোস্ট",
+        "description": "একটি চাকরি পোস্ট করুন"
+      },
+      "bundle5": {
+        "name": "৫-পোস্ট বান্ডেল",
+        "description": "ছোট দলের জন্য সেরা মূল্য"
+      },
+      "bundle10": {
+        "name": "১০-পোস্ট বান্ডেল",
+        "description": "ক্রমবর্ধমান নিয়োগের জন্য"
+      }
+    },
+    "subscriptions": {
+      "starter": {
+        "name": "Starter",
+        "description": "মাঝে মাঝে নিয়োগের জন্য"
+      },
+      "growth": {
+        "name": "Growth",
+        "description": "সক্রিয় নিয়োগ দলের জন্য"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "উচ্চ-ভলিউম নিয়োগের জন্য"
+      }
+    }
+  },
+  "talent": {
+    "graphTitle": "ট্যালেন্ট গ্রাফ",
+    "graphDescription": "প্রমাণ, আত্মবিশ্বাস এবং সাম্প্রতিকতাসহ দক্ষতা",
+    "confidence": "আত্মবিশ্বাস",
+    "confidenceLevel": { "high": "উচ্চ", "medium": "মাঝারি", "low": "নিম্ন" },
+    "recency": "{months} মাস আগে ব্যবহৃত",
+    "searchTitle": "ট্যালেন্ট অনুসন্ধান",
+    "searchSubtitle": "দক্ষতা ও পেশাগত overlap দিয়ে প্রার্থী খুঁজুন",
+    "filters": "ফিল্টার",
+    "keywordSearch": "কীওয়ার্ড অনুসন্ধান",
+    "searchPlaceholder": "দক্ষতা, পদবি...",
+    "nlSearch": "স্বাভাবিক ভাষায় অনুসন্ধান",
+    "nlSearchDescription": "আপনার প্রয়োজন বর্ণনা করুন (ডেমো)",
+    "nlPlaceholder": "যেমন: ঢাকায় VAT অভিজ্ঞতাসহ সিনিয়র অ্যাকাউন্ট্যান্ট",
+    "nlSearchButton": "AI দিয়ে খুঁজুন",
+    "resultsCount": "{count} জন প্রার্থী পাওয়া গেছে",
+    "overlap": "{percent}% overlap",
+    "viewProfile": "পাইপলাইনে দেখুন",
+    "salary": {
+      "title": "বেতন তথ্য",
+      "description": "{count}টি সাম্প্রতিক তালিকা থেকে (ডেমো)",
+      "p25": "২৫তম পার্সেনটাইল",
+      "median": "মধ্যম",
+      "p75": "৭৫তম পার্সেনটাইল",
+      "updated": "আপডেট {date}"
+    },
+    "match": {
+      "title": "মিল ব্যাখ্যা",
+      "description": "প্রমাণ-ট্যাগ করা dimensional overlap",
+      "overlapNote": "প্রমাণ-ভিত্তিক {percent}% relevant overlap",
+      "evidenceNote": "GoJobs প্রার্থীর credential যাচাই করে না।"
+    }
+  },
+  "assessments": {
+    "introDescription": "{count} প্রশ্ন · ~{minutes} মিনিট",
+    "start": "অ্যাসেসমেন্ট শুরু",
+    "question": "প্রশ্ন {current}/{total}",
+    "next": "পরবর্তী",
+    "submit": "জমা দিন",
+    "shortAnswerPlaceholder": "উত্তর লিখুন...",
+    "results": "অ্যাসেসমেন্ট সম্পন্ন",
+    "resultsDescription": "আপনার উত্তর recruiter-এর কাছে পাঠানো হয়েছে।",
+    "mockOutcome": "মাঝারি fit — VAT ও reporting দক্ষতা নিশ্চিত।",
+    "backToApplications": "আবেদনে ফিরুন",
+    "completed": "অ্যাসেসমেন্ট জমা হয়েছে",
+    "templates": {
+      "title": "অ্যাসেসমেন্ট টেমপ্লেট",
+      "subtitle": "পদ-নির্দিষ্ট অ্যাসেসমেন্ট কনফিগার করুন",
+      "meta": "{count} প্রশ্ন · {minutes} মিনিট",
+      "enabled": "সক্রিয়",
+      "disabled": "নিষ্ক্রিয়",
+      "toggle": "টেমপ্লেট সক্রিয় করুন",
+      "updated": "টেমপ্লেট আপডেট হয়েছে"
+    }
+  },
+  "interviews": {
+    "employerTitle": "ইন্টারভিউ",
+    "employerSubtitle": "AI ইন্টারভিউ রিভিউ ও মানব ইন্টারভিউ শিডিউল",
+    "candidateTitle": "আমার ইন্টারভিউ",
+    "candidateSubtitle": "AI ও মানব ইন্টারভিউ সেশন",
+    "viewApplicant": "আবেদনকারী দেখুন",
+    "notScheduled": "এখনো শিডিউল হয়নি",
+    "completedNote": "ইন্টারভিউ সম্পন্ন — recruiter সিদ্ধান্তের অপেক্ষায়",
+    "status": { "scheduled": "শিডিউল", "in_progress": "চলমান", "completed": "সম্পন্ন", "cancelled": "বাতিল" },
+    "ai": {
+      "type": "AI ইন্টারভিউ",
+      "start": "AI ইন্টারভিউ শুরু",
+      "deviceCheck": "ডিভাইস পরীক্ষা",
+      "deviceCheckDescription": "মাইক, ক্যামেরা ও ব্রাউজার যাচাই করুন",
+      "microphone": "মাইক্রোফোন",
+      "camera": "ক্যামেরা",
+      "browser": "ব্রাউজার",
+      "startInterview": "ইন্টারভিউ শুরু",
+      "question": "ইন্টারভিউ প্রশ্ন",
+      "answerPlaceholder": "উত্তর লিখুন (ডেমো)...",
+      "nextQuestion": "পরবর্তী প্রশ্ন",
+      "finish": "শেষ করুন",
+      "transcript": "লাইভ ট্রান্সক্রিপ্ট",
+      "transcriptEmpty": "উত্তর এখানে দেখাবে",
+      "complete": "ইন্টারভিউ সম্পন্ন",
+      "completeDescription": "উত্তর recruiter-এর কাছে পাঠানো হয়েছে।",
+      "backToInterviews": "ইন্টারভিউতে ফিরুন",
+      "pendingReview": "প্রার্থীর completion অপেক্ষায়"
+    },
+    "human": { "type": "মানব ইন্টারভিউ", "prepareNote": "স্ট্রাকচার্ড স্কোরকার্ড সহ প্রস্তুতি নিন" },
+    "review": {
+      "aiInterview": "AI ইন্টারভিউ",
+      "humanInterview": "মানব ইন্টারভিউ",
+      "summary": "AI সারাংশ",
+      "transcript": "ট্রান্সক্রিপ্ট",
+      "transcriptDescription": "সম্পূর্ণ কথোপকথন",
+      "scorecard": "স্কোরকার্ড",
+      "notScored": "স্কোর হয়নি",
+      "status": {
+        "scheduled": "শিডিউল",
+        "in_progress": "চলমান",
+        "completed": "সম্পন্ন",
+        "cancelled": "বাতিল"
+      }
+    },
+    "schedule": {
+      "title": "ইন্টারভিউ শিডিউল",
+      "employerDescription": "মানব ইন্টারভিউর সময় প্রস্তাব করুন",
+      "candidateDescription": "নিশ্চিত করুন বা অন্য সময় চান",
+      "date": "তারিখ",
+      "time": "সময়",
+      "duration": "{minutes} মিনিট",
+      "confirm": "শিডিউল নিশ্চিত",
+      "scheduled": "ইন্টারভিউ শিডিউল হয়েছে"
+    }
+  },
+  "agents": {
+    "inputPlaceholder": "এজেন্টকে জিজ্ঞাসা করুন...",
+    "actionCards": "প্রস্তাবিত কাজ",
+    "approve": "অনুমোদন",
+    "dismiss": "বাতিল",
+    "fallbackResponse": "চাকরির fit, skill gap, pipeline সাহায্য করতে পারি।",
+    "actionStatus": { "suggested": "প্রস্তাবিত", "approved": "অনুমোদিত", "dismissed": "বাতিল", "completed": "সম্পন্ন" },
+    "activity": { "title": "কার্যকলাপ ইতিহাস", "description": "সাম্প্রতিক এজেন্ট কাজ" },
+    "career": {
+      "title": "ক্যারিয়ার এজেন্ট",
+      "subtitle": "fit, gap ও পরবর্তী পদক্ষেপ বুঝুন",
+      "prompts": { "fit": "Senior Accountant পদে আমার fit কেমন?", "gaps": "কোন skill gap ঠিক করব?" }
+    },
+    "hiring": {
+      "title": "হায়ারিং এজেন্ট",
+      "subtitle": "Shortlist ও pipeline পরিচালনা",
+      "prompts": { "shortlist": "Senior Accountant-এ কাকে shortlist করব?", "pipeline": "Pipeline সারাংশ দিন" }
+    }
+  },
+  "trust": {
+    "employerVerified": "GoJobs-এ নিয়োগকর্তা যাচাইকৃত",
+    "trustPending": "বিশ্বাস যাচাই মুলতুবি",
+    "notVerified": "এখনো যাচাই হয়নি",
+    "report": {
+      "reportJob": "চাকরি রিপোর্ট",
+      "title": "এই চাকরি রিপোর্ট করুন",
+      "description": "{job} সম্পর্কে সন্দেহজনক তালিকা রিপোর্ট করুন।",
+      "reason": "কারণ",
+      "selectReason": "কারণ নির্বাচন",
+      "reasons": { "scam": "সন্দেহজনক scam", "misleadingSalary": "ভুল বেতন", "fakeCompany": "ভুয়া কোম্পানি", "other": "অন্যান্য" },
+      "details": "বিস্তারিত",
+      "detailsPlaceholder": "সমস্যা বর্ণনা করুন...",
+      "submit": "রিপোর্ট জমা",
+      "submitted": "রিপোর্ট জমা হয়েছে — ধন্যবাদ"
+    },
+    "scam": {
+      "warningTitle": "সতর্ক থাকুন",
+      "warningDescription": "নিয়োগকর্তার trust check মুলতুবি। ব্যক্তিগত তথ্য বা পেমেন্ট দেওয়ার আগে যাচাই করুন।",
+      "blockedTitle": "তালিকা ফ্ল্যাগ করা",
+      "blockedDescription": "এই চাকরি বা নিয়োগকর্তা ফ্ল্যাগ করা। সতর্ক থাকুন বা আবেদন এড়িয়ে চলুন।"
+    },
+    "reputation": {
+      "title": "নিয়োগকর্তার reputation",
+      "jobsPosted": "পোস্ট করা চাকরি",
+      "responseRate": "response rate",
+      "avgReview": "গড় review সময়",
+      "employerChecksNote": "Employer Checks নিয়োগকর্তা করে — GoJobs প্রার্থী verify করে না।",
+      "flags": { "responsive": "Responsive employer", "verified_employer": "GoJobs-এ verified employer" }
+    }
+  },
+  "campus": {
+    "title": "ক্যাম্পাস নিয়োগ",
+    "subtitle": "বিশ্ববিদ্যালয়, ইন্টার্নশিপ ও graduate program",
+    "universities": "অংশীদার বিশ্ববিদ্যালয়",
+    "internships": "{count} ইন্টার্নশিপ",
+    "graduatePrograms": "{count} graduate program",
+    "featuredInternships": "বাছাইকৃত ইন্টার্নশিপ"
+  },
+  "frontline": {
+    "title": "ফ্রন্টলাইন নিয়োগ",
+    "subtitle": "চাকরি খুঁজুন সহজে — ফোন দিয়ে শুরু করুন",
+    "step": "ধাপ {current}/{total}",
+    "phoneStep": "ফোন নম্বর",
+    "phoneDescription": "আপনার ফোন নম্বর দিন",
+    "phone": "মোবাইল নম্বর",
+    "name": "আপনার নাম",
+    "namePlaceholder": "পূর্ণ নাম",
+    "continue": "এগিয়ে যান",
+    "shiftStep": "শিফট",
+    "shiftDescription": "কোন শিফটে কাজ করতে চান?",
+    "shifts": { "morning": "সকাল", "afternoon": "বিকেল", "night": "রাত" },
+    "availabilityStep": "উপলব্ধতা",
+    "availabilityDescription": "কখন কাজ শুরু করতে পারবেন?",
+    "availableNow": "এখনই কাজ করতে পারি",
+    "complete": "সম্পন্ন",
+    "completed": "প্রোফাইল তৈরি",
+    "successTitle": "সফল!",
+    "successDescription": "প্রোফাইল সংরক্ষিত। শীঘ্রই যোগাযোগ করা হবে।"
+  },
+  "enterprise": {
+    "title": "এন্টারপ্রাইজ সেটিংস",
+    "subtitle": "SSO, API, webhooks ও team permissions",
+    "tabs": { "sso": "SSO", "api": "API", "webhooks": "Webhooks", "team": "Team" },
+    "sso": { "title": "Single sign-on", "description": "Identity provider সংযোগ", "provider": "Provider", "domain": "Email domain", "configure": "SSO কনফিগার" },
+    "api": { "title": "API keys", "description": "Programmatic access", "rotate": "Key rotate" },
+    "webhooks": { "title": "Webhooks", "description": "Real-time events", "url": "Endpoint URL", "save": "Webhook save" },
+    "team": { "title": "Team permissions", "description": "Access manage", "invite": "Invite member", "roles": { "admin": "Admin", "recruiter": "Recruiter", "viewer": "Viewer" } }
+  }
+}

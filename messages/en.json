@@ -1,0 +1,1145 @@
+{
+  "common": {
+    "appName": "GoJobs",
+    "tagline": "Bangladesh's trusted job marketplace",
+    "search": "Search",
+    "searchPlaceholder": "Search jobs, companies, or skills...",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try again",
+    "empty": "Nothing here yet",
+    "save": "Save",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "back": "Back",
+    "next": "Next",
+    "viewAll": "View all",
+    "learnMore": "Learn more",
+    "edit": "Edit",
+    "delete": "Delete",
+    "add": "Add",
+    "remove": "Remove",
+    "confirm": "Confirm",
+    "close": "Close",
+    "saved": "Saved successfully",
+    "upload": "Upload"
+  },
+  "nav": {
+    "jobs": "Jobs",
+    "companies": "Companies",
+    "forCandidates": "For Candidates",
+    "forEmployers": "For Employers",
+    "login": "Log in",
+    "signup": "Sign up",
+    "dashboard": "Dashboard",
+    "logout": "Log out",
+    "more": "More",
+    "campus": "Campus Hiring",
+    "frontline": "Frontline Jobs",
+    "pricing": "Pricing"
+  },
+  "footer": {
+    "about": "About GoJobs",
+    "aboutText": "GoJobs connects Bangladesh's talent with trusted employers through evidence-based matching.",
+    "candidates": "For Candidates",
+    "employers": "For Employers",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© {year} GoJobs. All rights reserved."
+  },
+  "roles": {
+    "public": "Public",
+    "candidate": "Candidate",
+    "recruiter": "Recruiter",
+    "admin": "Admin",
+    "switchRole": "Switch role"
+  },
+  "language": {
+    "en": "English",
+    "bn": "বাংলা",
+    "switchLanguage": "Switch language"
+  },
+  "home": {
+    "heroTitle": "Find your next opportunity in Bangladesh",
+    "heroSubtitle": "Search thousands of jobs from trusted employers. Apply as a guest or build your Career Passport.",
+    "featuredJobs": "Featured Jobs",
+    "browseCategories": "Browse by Category",
+    "browseLocations": "Browse by Location",
+    "candidateCta": "Build your Career Passport",
+    "employerCta": "Post a job"
+  },
+  "jobs": {
+    "title": "Job Search",
+    "home": "Home",
+    "search": "Search",
+    "searchPlaceholder": "Search jobs by title, skill, or keyword...",
+    "filters": "Filters",
+    "clearFilters": "Clear all",
+    "filterLocation": "Location",
+    "filterDistrict": "District",
+    "filterSalary": "Salary range",
+    "filterWorkMode": "Work mode",
+    "filterIndustry": "Industry",
+    "filterExperience": "Experience level",
+    "filterOccupation": "Occupation",
+    "filterGlobal": "Region",
+    "allRegions": "All regions",
+    "regionBd": "Bangladesh",
+    "regionRemoteGlobal": "Remote (global)",
+    "regionInternational": "International",
+    "allLocations": "All locations",
+    "allDistricts": "All districts",
+    "allWorkModes": "All work modes",
+    "allIndustries": "All industries",
+    "allExperience": "All levels",
+    "allOccupations": "All occupations",
+    "sortBy": "Sort by",
+    "sortRelevance": "Relevance",
+    "sortDate": "Date posted",
+    "sortSalary": "Salary",
+    "resultsCount": "{count} jobs found",
+    "noResults": "No jobs found",
+    "noResultsDesc": "Try adjusting your search or filters to find more opportunities.",
+    "posted": "Posted",
+    "applicants": "{count} applicants",
+    "previous": "Previous",
+    "next": "Next",
+    "description": "Job description",
+    "responsibilities": "Key responsibilities",
+    "hardRequirements": "Must-have requirements",
+    "softRequirements": "Nice-to-have requirements",
+    "required": "Required",
+    "preferred": "Preferred",
+    "relatedJobs": "Related jobs",
+    "applyGuest": "Apply as Guest",
+    "applyPassport": "Apply with Career Passport",
+    "share": "Share",
+    "copied": "Copied!",
+    "linkCopied": "Link copied to clipboard",
+    "viewCompany": "View company profile",
+    "yourMatch": "Your match for this role",
+    "matchScoreNote": "Based on your Career Passport, you have {score}% relevant overlap with this role.",
+    "workMode": {
+      "on_site": "On-site",
+      "hybrid": "Hybrid",
+      "remote": "Remote"
+    },
+    "occupation": {
+      "accountant": "Accountant",
+      "hr_manager": "HR Manager",
+      "sales_executive": "Sales Executive",
+      "rmg_merchandiser": "RMG Merchandiser",
+      "software_engineer": "Software Engineer",
+      "marketing_manager": "Marketing Manager",
+      "operations_manager": "Operations Manager",
+      "customer_service": "Customer Service"
+    },
+    "seniority": {
+      "entry": "Entry level",
+      "mid": "Mid level",
+      "senior": "Senior",
+      "lead": "Lead",
+      "manager": "Manager"
+    },
+    "industry": {
+      "banking": "Banking & Finance",
+      "rmg": "RMG & Garments",
+      "ngo": "NGO & Development",
+      "technology": "Technology",
+      "manufacturing": "Manufacturing",
+      "retail": "Retail & FMCG",
+      "healthcare": "Healthcare",
+      "education": "Education"
+    }
+  },
+  "companies": {
+    "title": "Companies",
+    "subtitle": "Explore trusted employers across Bangladesh",
+    "home": "Home",
+    "openJobs": "{count} open jobs",
+    "openPositions": "Open positions",
+    "noOpenJobs": "No open positions at this time.",
+    "size": "{size} employees",
+    "employees": "{count} employees",
+    "founded": "Founded {year}",
+    "industry": {
+      "banking": "Banking & Finance",
+      "rmg": "RMG & Garments",
+      "ngo": "NGO & Development",
+      "technology": "Technology",
+      "manufacturing": "Manufacturing",
+      "retail": "Retail & FMCG",
+      "healthcare": "Healthcare",
+      "education": "Education"
+    }
+  },
+  "apply": {
+    "title": "Apply for this job",
+    "step": "Step {current} of {total}",
+    "personalInfo": "Personal information",
+    "personalInfoDesc": "Enter your contact details so the employer can reach you.",
+    "fullName": "Full name",
+    "email": "Email address",
+    "phone": "Phone number",
+    "cvUpload": "Upload your CV",
+    "cvUploadDesc": "Upload your resume or CV. This is a demo — no file is actually uploaded.",
+    "uploadCv": "Click to upload CV",
+    "cvFormats": "PDF, DOC, or DOCX",
+    "screening": "Screening questions",
+    "screeningDesc": "Please answer a few questions from the employer.",
+    "coverNote": "Cover note",
+    "coverNoteDesc": "Optional — tell the employer why you're interested in this role.",
+    "coverNotePlaceholder": "I'm interested in this role because...",
+    "reviewSubmit": "Review & submit",
+    "reviewSubmitDesc": "Please review your application and confirm your consent.",
+    "consentText": "I agree to share my information with this employer for recruitment purposes. I understand GoJobs does not verify my credentials.",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit application",
+    "submitting": "Submitting...",
+    "successTitle": "Application submitted!",
+    "successDesc": "Your application for {job} has been received.",
+    "referenceId": "Your reference ID",
+    "successNote": "Save this reference ID to track your application. The employer will review your submission shortly.",
+    "createAccount": "Create a Career Passport",
+    "backToJob": "Back to job"
+  },
+  "evidence": {
+    "candidate_provided": "Candidate provided",
+    "cv_extracted": "CV extracted",
+    "assessment_derived": "Assessment evidence",
+    "interview_derived": "Interview evidence",
+    "recruiter_entered": "Recruiter entered"
+  },
+  "match": {
+    "strong": "Strong",
+    "moderate": "Moderate",
+    "limited": "Limited",
+    "none": "None",
+    "dimensions": "Match dimensions",
+    "eligible": "You have enough relevant overlap to complete a General Assessment",
+    "assessFit": "Assess My Fit",
+    "matchPercent": "{score}% match"
+  },
+  "shell": {
+    "comingSoon": "Coming in Phase 2",
+    "placeholder": "This feature will be built in the next phase."
+  },
+  "auth": {
+    "loginTitle": "Welcome back",
+    "loginSubtitle": "Sign in to your GoJobs account",
+    "signupTitle": "Create your account",
+    "signupSubtitle": "Join GoJobs to find opportunities or hire talent",
+    "email": "Email address",
+    "emailPlaceholder": "you@example.com",
+    "password": "Password",
+    "passwordPlaceholder": "Enter any password (demo)",
+    "name": "Full name",
+    "namePlaceholder": "Your full name",
+    "loginButton": "Log in",
+    "signupButton": "Create account",
+    "orDivider": "or",
+    "demoUsers": "Quick demo login",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "roleLabel": "I am joining as",
+    "roleCandidate": "Job seeker (Candidate)",
+    "roleEmployer": "Employer (Recruiter)",
+    "demoNote": "This is a demo — any email and password will work.",
+    "demoAccountsHint": "Click any account below to sign in instantly. Or use the role switcher in the header anytime."
+  },
+  "candidate": {
+    "nav": {
+      "dashboard": "Dashboard",
+      "passport": "Career Passport",
+      "applications": "Applications",
+      "saved": "Saved Jobs",
+      "onboarding": "Onboarding",
+      "interviews": "Interviews",
+      "agent": "Career Agent"
+    },
+    "dashboard": {
+      "title": "Candidate Dashboard",
+      "welcome": "Welcome back, {name}",
+      "stats": {
+        "applications": "Active applications",
+        "completeness": "Profile completeness",
+        "saved": "Saved jobs"
+      },
+      "recommended": "Recommended for you",
+      "recommendedSubtitle": "Jobs matched to your Career Passport",
+      "quickActions": "Quick actions",
+      "editPassport": "Edit Career Passport",
+      "viewApplications": "View applications",
+      "completeOnboarding": "Complete onboarding"
+    },
+    "passport": {
+      "title": "Career Passport",
+      "subtitle": "Your professional profile — evidence-tagged and employer-ready",
+      "tabs": {
+        "identity": "Identity",
+        "experience": "Experience",
+        "education": "Education",
+        "skills": "Skills",
+        "preferences": "Preferences"
+      },
+      "identity": {
+        "headline": "Professional headline",
+        "summary": "Summary",
+        "phone": "Phone",
+        "email": "Email",
+        "visibility": "Profile visibility",
+        "visibilityActivelyLooking": "Actively Looking",
+        "visibilityOpen": "Open to Opportunities",
+        "visibilityPrivate": "Private",
+        "visibilityHelp": "Controls who can discover your profile"
+      },
+      "experience": {
+        "title": "Job title",
+        "company": "Company",
+        "location": "Location",
+        "startDate": "Start date",
+        "endDate": "End date",
+        "current": "Currently working here",
+        "responsibilities": "Responsibilities",
+        "achievements": "Achievements",
+        "addExperience": "Add experience",
+        "noExperience": "No experience added yet"
+      },
+      "education": {
+        "institution": "Institution",
+        "degree": "Degree",
+        "field": "Field of study",
+        "startDate": "Start year",
+        "endDate": "End year",
+        "current": "Currently studying",
+        "addEducation": "Add education",
+        "noEducation": "No education added yet"
+      },
+      "skills": {
+        "name": "Skill name",
+        "level": "Proficiency",
+        "levels": {
+          "beginner": "Beginner",
+          "intermediate": "Intermediate",
+          "advanced": "Advanced",
+          "expert": "Expert"
+        },
+        "addSkill": "Add skill",
+        "noSkills": "No skills added yet"
+      },
+      "preferences": {
+        "desiredRoles": "Desired roles",
+        "desiredRolesPlaceholder": "e.g. Senior Accountant, Tax Consultant",
+        "salaryMin": "Minimum salary (BDT/month)",
+        "salaryMax": "Maximum salary (BDT/month)",
+        "locations": "Preferred locations",
+        "workMode": "Work mode",
+        "workModes": {
+          "on_site": "On-site",
+          "hybrid": "Hybrid",
+          "remote": "Remote"
+        },
+        "noticePeriod": "Notice period (days)",
+        "globalTitle": "Global talent preferences",
+        "country": "Country",
+        "timezone": "Timezone",
+        "workAuthorization": "Work authorization",
+        "workAuthorizationPlaceholder": "e.g. Bangladesh, UAE, Remote",
+        "openToRemoteGlobal": "Open to remote global opportunities"
+      },
+      "saved": "Passport saved",
+      "completeness": "{percent}% complete"
+    },
+    "onboarding": {
+      "title": "Set up your Career Passport",
+      "subtitle": "Upload your CV and we'll help you build your profile",
+      "steps": {
+        "upload": "Upload CV",
+        "review": "Review extraction",
+        "confirm": "Confirm details",
+        "preferences": "Set preferences"
+      },
+      "upload": {
+        "title": "Upload your CV",
+        "description": "We'll extract your experience, education, and skills automatically.",
+        "dropzone": "Drag & drop your CV here, or click to browse",
+        "formats": "PDF, DOC, DOCX (demo — any file works)",
+        "uploaded": "CV uploaded: {filename}",
+        "processing": "Extracting information..."
+      },
+      "review": {
+        "title": "Review extracted information",
+        "description": "We've pre-filled your profile from your CV. Review and edit as needed.",
+        "sourceNote": "Fields marked with badges show where the data came from"
+      },
+      "confirm": {
+        "title": "Confirm your details",
+        "description": "Make sure everything looks correct before continuing."
+      },
+      "preferences": {
+        "title": "Set your job preferences",
+        "description": "Help us recommend the right opportunities for you."
+      },
+      "complete": "Complete setup",
+      "completed": "Your Career Passport is ready!"
+    },
+    "applications": {
+      "title": "My Applications",
+      "subtitle": "Track your job applications and pipeline status",
+      "empty": "No applications yet",
+      "emptyDescription": "Browse jobs and apply to start tracking your applications.",
+      "browseJobs": "Browse jobs",
+      "appliedAt": "Applied {date}",
+      "stages": {
+        "applied": "Applied",
+        "reviewed": "Under review",
+        "screening": "Screening",
+        "general_assessment": "General Assessment",
+        "ai_interview": "AI Interview",
+        "human_interview": "Interview",
+        "employer_checks": "Employer checks",
+        "offer": "Offer",
+        "hired": "Hired",
+        "rejected": "Not selected"
+      },
+      "detail": {
+        "title": "Application details",
+        "timeline": "Application timeline",
+        "currentStage": "Current stage",
+        "matchDimensions": "How you match this role",
+        "notes": "Recruiter notes",
+        "viewJob": "View job posting"
+      }
+    },
+    "assessment": {
+      "title": "General Assessment",
+      "confirmPassport": "Confirm your Career Passport",
+      "confirmPassportDescription": "We'll use your passport data to contextualize this assessment. Review key details before starting.",
+      "startAssessment": "Start assessment",
+      "question": "Question {current} of {total}",
+      "submitAnswers": "Submit answers",
+      "results": "Assessment results",
+      "outcomes": {
+        "strong_fit": "Strong fit",
+        "moderate_fit": "Moderate fit",
+        "limited_fit": "Limited fit"
+      },
+      "alreadyCompleted": "Assessment completed",
+      "viewResults": "View results"
+    },
+    "saved": {
+      "title": "Saved Jobs",
+      "subtitle": "Jobs you've bookmarked for later",
+      "empty": "No saved jobs",
+      "emptyDescription": "Save jobs while browsing to find them here later.",
+      "unsave": "Remove",
+      "browseJobs": "Browse jobs"
+    }
+  },
+  "employer": {
+    "nav": {
+      "dashboard": "Dashboard",
+      "talentSearch": "Talent Search",
+      "assessments": "Assessments",
+      "interviews": "Interviews",
+      "agent": "Hiring Agent",
+      "enterprise": "Enterprise",
+      "postJob": "Post Job"
+    },
+    "guard": {
+      "title": "Recruiter access required",
+      "description": "Switch to the Recruiter role or log in to access employer tools.",
+      "login": "Log in"
+    },
+    "onboarding": {
+      "title": "Employer onboarding",
+      "subtitle": "Tell us about your company to start posting jobs on GoJobs.",
+      "companyInfo": "Company information",
+      "companyInfoDescription": "This information is used for trust verification and your public company profile.",
+      "companyName": "Company name",
+      "industry": "Industry",
+      "size": "Company size",
+      "location": "Head office location",
+      "website": "Website",
+      "description": "Company description",
+      "submit": "Submit for verification",
+      "locationRequired": "Please select division and district",
+      "submitted": "Company profile submitted. Trust check is pending.",
+      "trustStatus": "Trust verification",
+      "trustDescription": "GoJobs verifies employers before they can publish jobs.",
+      "simulateApproval": "Simulate approval (demo)",
+      "approved": "Your company is verified!",
+      "goToDashboard": "Go to dashboard",
+      "industries": {
+        "banking": "Banking & Finance",
+        "rmg": "RMG & Textiles",
+        "ngo": "NGO & Development",
+        "technology": "Technology",
+        "manufacturing": "Manufacturing",
+        "retail": "Retail & FMCG",
+        "healthcare": "Healthcare",
+        "education": "Education"
+      }
+    },
+    "dashboard": {
+      "title": "Employer dashboard",
+      "subtitle": "Overview of your open roles and hiring funnel.",
+      "postJob": "Post a job",
+      "companySettings": "Company settings",
+      "openJobs": "Open jobs",
+      "openJobsDescription": "Published roles and applicant counts.",
+      "noJobs": "No open jobs yet. Create your first listing.",
+      "applicants": "{count} applicants",
+      "viewApplicants": "View applicants",
+      "funnel": {
+        "total": "Total applicants",
+        "matched50": "≥50% overlap",
+        "assessmentsDone": "Assessments done",
+        "recommended": "Recommended"
+      },
+      "workMode": {
+        "on_site": "On-site",
+        "hybrid": "Hybrid",
+        "remote": "Remote"
+      }
+    },
+    "jobCreation": {
+      "title": "Create a job",
+      "subtitle": "Fill in the details or use Job Copilot to get started quickly.",
+      "jobDetails": "Job details",
+      "saveDraft": "Save draft",
+      "publish": "Publish",
+      "draftSaved": "Draft saved",
+      "published": "Job published successfully",
+      "untitled": "Untitled job",
+      "previewBadge": "Preview",
+      "editForm": "Edit form",
+      "tabs": {
+        "form": "Form",
+        "preview": "Preview"
+      },
+      "fields": {
+        "title": "Job title",
+        "occupation": "Occupation",
+        "seniority": "Seniority",
+        "description": "Description",
+        "hardRequirements": "Hard requirements",
+        "softRequirements": "Soft requirements",
+        "salaryMin": "Minimum salary (BDT)",
+        "salaryMax": "Maximum salary (BDT)",
+        "location": "Location",
+        "workMode": "Work mode",
+        "responsibilities": "Responsibilities",
+        "screeningQuestions": "Screening questions"
+      },
+      "occupations": {
+        "accountant": "Accountant",
+        "hr_manager": "HR Manager",
+        "sales_executive": "Sales Executive",
+        "rmg_merchandiser": "RMG Merchandiser",
+        "software_engineer": "Software Engineer",
+        "marketing_manager": "Marketing Manager",
+        "operations_manager": "Operations Manager",
+        "customer_service": "Customer Service"
+      },
+      "seniorities": {
+        "entry": "Entry level",
+        "mid": "Mid level",
+        "senior": "Senior",
+        "lead": "Lead",
+        "manager": "Manager"
+      },
+      "workModes": {
+        "on_site": "On-site",
+        "hybrid": "Hybrid",
+        "remote": "Remote"
+      },
+      "copilot": {
+        "title": "Job Copilot",
+        "welcome": "Describe the role you want to hire for. Try: \"senior HR for garment factory\"",
+        "placeholder": "Describe the role...",
+        "thinking": "Thinking...",
+        "applied": "I've filled in the form for \"{title}\". Review and adjust as needed.",
+        "noMatch": "I couldn't match that description. Try mentioning the role type and industry.",
+        "hint": "Demo: try \"senior HR for garment factory\", \"backend engineer fintech\", or \"sales executive fmcg\""
+      }
+    },
+    "jobDetail": {
+      "notFound": "Job not found",
+      "viewApplicants": "View applicants",
+      "publicListing": "Public listing",
+      "overview": "Overview",
+      "salary": "Salary",
+      "workMode": "Work mode",
+      "responsibilities": "Responsibilities",
+      "requirements": "Requirements",
+      "requirementsDescription": "Dimensional requirements for this role",
+      "stats": {
+        "totalApplicants": "Total applicants",
+        "matched50": "≥50% overlap",
+        "inPipeline": "In pipeline"
+      },
+      "status": {
+        "draft": "Draft",
+        "published": "Published",
+        "closed": "Closed"
+      },
+      "workModes": {
+        "on_site": "On-site",
+        "hybrid": "Hybrid",
+        "remote": "Remote"
+      }
+    },
+    "ats": {
+      "title": "Applicants",
+      "subtitle": "{count} candidates in pipeline",
+      "kanban": "Kanban",
+      "table": "Table",
+      "filters": "Filters",
+      "filterStage": "Stage",
+      "filterMatch": "Match threshold",
+      "allStages": "All stages",
+      "matchAll": "All overlap levels",
+      "match50": "≥50% overlap",
+      "match70": "≥70% overlap",
+      "jobNotFound": "Job not found",
+      "noApplicants": "No applicants match your filters",
+      "dimensionCount": "{count} match dimensions",
+      "overlap": "{percent}% overlap",
+      "columns": {
+        "name": "Candidate",
+        "stage": "Stage",
+        "overlap": "Overlap",
+        "dimensions": "Dimensions",
+        "applied": "Applied"
+      },
+      "stages": {
+        "applied": "Applied",
+        "reviewed": "Reviewed",
+        "screening": "Screening",
+        "general_assessment": "General Assessment",
+        "ai_interview": "AI Interview",
+        "human_interview": "Human Interview",
+        "employer_checks": "Employer Checks",
+        "offer": "Offer",
+        "hired": "Hired"
+      }
+    },
+    "review": {
+      "notFound": "Application not found",
+      "backToAts": "Back to applicants",
+      "unknownCandidate": "Unknown candidate",
+      "noHeadline": "No headline provided",
+      "passportSummary": "Career Passport",
+      "guestApplicant": "Guest applicant",
+      "completeness": "{percent}% complete",
+      "screeningAnswers": "Screening answers",
+      "dimensionalMatch": "Dimensional match",
+      "dimensionalMatchDescription": "Evidence-based overlap with job requirements — no single score.",
+      "noDimensions": "No match dimensions yet",
+      "actions": "Quick actions",
+      "moveStage": "Move to stage",
+      "addNote": "Add note",
+      "existingNotes": "Recruiter notes",
+      "noteAdded": "Note added",
+      "stageUpdated": "Stage updated",
+      "gaResults": "General Assessment results",
+      "gaQuestions": "Assessment Q&A",
+      "gaQuestionsDescription": "Scripted responses from the candidate's completed assessment",
+      "noAssessment": "No assessment completed yet",
+      "duration": "{minutes} min",
+      "evidence": "Evidence sources",
+      "activityTimeline": "Activity timeline",
+      "overlapBadge": "{percent}% overlap",
+      "prevApplicant": "Previous applicant",
+      "nextApplicant": "Next applicant",
+      "tabs": {
+        "overview": "Overview",
+        "application": "Application",
+        "match": "Match & Fit",
+        "assessments": "Assessments",
+        "evidence": "Evidence",
+        "activity": "Activity"
+      },
+      "applicationSummary": "Application summary",
+      "appliedDate": "Applied",
+      "source": "Source",
+      "currentStage": "Current stage",
+      "sources": {
+        "gojobs": "GoJobs",
+        "referral": "Referral",
+        "job_board": "Job board",
+        "direct": "Direct"
+      },
+      "expectations": "Expectations",
+      "salaryExpectation": "Salary expectation",
+      "noticePeriod": "Notice period",
+      "availability": "Availability",
+      "location": "Location",
+      "days": "days",
+      "quickMatch": "Quick match summary",
+      "coverNote": "Cover note",
+      "consentRecorded": "Application consent recorded on {date}",
+      "matchExplanation": "Match explanation",
+      "metRequirements": "Met requirements",
+      "unmetRequirements": "Gaps or uncertainties",
+      "talentGraph": "Talent graph",
+      "talentGraphDescription": "Competency signals with confidence, recency, and evidence source",
+      "uploadedDocuments": "Uploaded documents",
+      "uploadedAt": "Uploaded {date}",
+      "candidateProvidedDisclaimer": "Candidate provided — not verified by GoJobs",
+      "portfolio": "Portfolio & work samples",
+      "inviteAssessment": "Invite assessment",
+      "inviteAssessmentMock": "Assessment invitation sent (demo)",
+      "scheduleInterview": "Schedule interview",
+      "scheduleInterviewMock": "Interview scheduler opened (demo)",
+      "roleAssessmentType": {
+        "mcq": "Multiple choice",
+        "short_answer": "Short answer"
+      },
+      "cv": {
+        "title": "CV",
+        "contact": "Contact",
+        "summary": "Professional summary",
+        "download": "Download CV",
+        "downloadMock": "Download started for {filename} (demo — no file)",
+        "showCv": "Show CV",
+        "hideCv": "Hide CV",
+        "sourceDisclaimer": "Candidate provided — not verified by GoJobs",
+        "noExtractedSummary": "No extracted summary available from uploaded CV."
+      },
+      "timeline": {
+        "applied": "Application submitted",
+        "stageChanged": "Moved to {stage}",
+        "assessmentCompleted": "General Assessment completed"
+      },
+      "outcomes": {
+        "strong_fit": "Strong fit",
+        "moderate_fit": "Moderate fit",
+        "limited_fit": "Limited fit"
+      },
+      "stages": {
+        "applied": "Applied",
+        "reviewed": "Reviewed",
+        "screening": "Screening",
+        "general_assessment": "General Assessment",
+        "ai_interview": "AI Interview",
+        "human_interview": "Human Interview",
+        "employer_checks": "Employer Checks",
+        "offer": "Offer",
+        "hired": "Hired"
+      }
+    }
+  },
+  "admin": {
+    "title": "Admin Dashboard",
+    "subtitle": "Platform overview, moderation, and trust verification",
+    "accessDenied": "Access denied",
+    "accessDeniedHint": "You need admin privileges to view this page.",
+    "login": "Log in as admin",
+    "backHome": "Back to home",
+    "stats": {
+      "jobs": "Published jobs",
+      "jobsDesc": "Active listings on the marketplace",
+      "companies": "Companies",
+      "companiesDesc": "Registered employers on GoJobs",
+      "applications": "Applications",
+      "applicationsDesc": "Total candidate applications",
+      "pendingReviews": "Pending trust reviews",
+      "pendingReviewsDesc": "Employers awaiting verification"
+    },
+    "moderation": {
+      "title": "Job moderation",
+      "description": "Flagged jobs requiring review",
+      "empty": "No flagged jobs at this time",
+      "job": "Job",
+      "company": "Company",
+      "salary": "Salary",
+      "flags": "Flags",
+      "applicants": "Applicants",
+      "actions": "Actions",
+      "review": "Review",
+      "reasons": {
+        "unverified_employer": "Unverified employer",
+        "salary_mismatch": "Salary mismatch",
+        "high_applicants": "High applicant volume",
+        "duplicate_title": "Duplicate title"
+      }
+    },
+    "trust": {
+      "title": "Trust verification queue",
+      "description": "Employers pending verification",
+      "empty": "No pending trust reviews",
+      "company": "Company",
+      "industry": "Industry",
+      "size": "Size",
+      "founded": "Founded",
+      "status": "Status",
+      "actions": "Actions",
+      "pending": "Pending",
+      "view": "View profile",
+      "review": "Review"
+    }
+  },
+  "billing": {
+    "title": "Billing",
+    "subtitle": "Manage your subscription and invoices",
+    "changePlan": "Change plan",
+    "perMonth": "month",
+    "currentPlan": {
+      "title": "Current plan",
+      "description": "Your active subscription",
+      "active": "Active",
+      "renews": "Renews"
+    },
+    "plans": {
+      "starter": "Starter",
+      "growth": "Growth",
+      "enterprise": "Enterprise"
+    },
+    "paymentMethod": {
+      "title": "Payment method",
+      "bkash": "bKash (demo)",
+      "update": "Update payment method"
+    },
+    "usage": {
+      "title": "Usage this period",
+      "description": "Track your plan limits",
+      "jobPosts": "Job posts",
+      "featured": "Featured slots",
+      "teamSeats": "Team seats"
+    },
+    "invoices": {
+      "title": "Invoice history",
+      "description": "Download past invoices",
+      "id": "Invoice ID",
+      "date": "Date",
+      "amount": "Amount",
+      "status": "Status",
+      "download": "Download",
+      "statuses": {
+        "paid": "Paid",
+        "pending": "Pending",
+        "failed": "Failed"
+      }
+    }
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Flexible plans for employers of every size",
+    "tabs": {
+      "packages": "Job packages",
+      "subscriptions": "Subscriptions"
+    },
+    "popular": "Popular",
+    "oneTime": "one-time",
+    "perMonth": "month",
+    "getStarted": "Get started",
+    "subscribe": "Subscribe",
+    "footnote": "All prices in BDT. Demo pricing — no real charges.",
+    "features": {
+      "posts": "{count} job posts",
+      "daysActive": "{days} days active",
+      "applicantTracking": "Applicant tracking",
+      "featured": "{count} featured slots",
+      "teamSeats": "{count} team seats",
+      "prioritySupport": "Priority support"
+    },
+    "packages": {
+      "single": {
+        "name": "Single post",
+        "description": "Post one job listing"
+      },
+      "bundle5": {
+        "name": "5-post bundle",
+        "description": "Best value for small teams"
+      },
+      "bundle10": {
+        "name": "10-post bundle",
+        "description": "For growing hiring needs"
+      }
+    },
+    "subscriptions": {
+      "starter": {
+        "name": "Starter",
+        "description": "For occasional hiring"
+      },
+      "growth": {
+        "name": "Growth",
+        "description": "For active recruiting teams"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "For high-volume hiring"
+      }
+    }
+  },
+  "talent": {
+    "graphTitle": "Talent Graph",
+    "graphDescription": "Competencies with evidence sources, confidence, and recency",
+    "confidence": "Confidence",
+    "confidenceLevel": {
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    },
+    "recency": "Used {months}mo ago",
+    "searchTitle": "Talent Search",
+    "searchSubtitle": "Discover candidates by competencies and occupational overlap",
+    "filters": "Filters",
+    "keywordSearch": "Keyword search",
+    "searchPlaceholder": "Skills, titles, competencies...",
+    "nlSearch": "Natural language search",
+    "nlSearchDescription": "Describe who you need in plain language (demo)",
+    "nlPlaceholder": "e.g. senior accountant with VAT experience in Dhaka",
+    "nlSearchButton": "Search with AI",
+    "resultsCount": "{count} candidates found",
+    "overlap": "{percent}% overlap",
+    "viewProfile": "View in pipeline",
+    "salary": {
+      "title": "Salary intelligence",
+      "description": "Aggregated from {count} recent listings (mock)",
+      "p25": "25th percentile",
+      "median": "Median",
+      "p75": "75th percentile",
+      "updated": "Updated {date}"
+    },
+    "match": {
+      "title": "Match explanation",
+      "description": "Dimensional overlap with evidence — no single score",
+      "overlapNote": "{percent}% relevant overlap based on evidence-tagged dimensions",
+      "evidenceNote": "Evidence sources indicate where each signal came from. GoJobs does not verify candidate credentials."
+    }
+  },
+  "assessments": {
+    "introDescription": "{count} questions · ~{minutes} minutes",
+    "start": "Start assessment",
+    "question": "Question {current} of {total}",
+    "next": "Next",
+    "submit": "Submit",
+    "shortAnswerPlaceholder": "Type your answer...",
+    "results": "Assessment complete",
+    "resultsDescription": "Your responses have been recorded for recruiter review.",
+    "mockOutcome": "Moderate fit — VAT and reporting competencies confirmed via assessment evidence.",
+    "backToApplications": "Back to applications",
+    "completed": "Assessment submitted",
+    "templates": {
+      "title": "Assessment templates",
+      "subtitle": "Configure role-specific assessments for your hiring pipeline",
+      "meta": "{count} questions · {minutes} min",
+      "enabled": "Enabled",
+      "disabled": "Disabled",
+      "toggle": "Enable template",
+      "updated": "Template updated"
+    }
+  },
+  "interviews": {
+    "employerTitle": "Interviews",
+    "employerSubtitle": "Review AI interviews and schedule human interviews",
+    "candidateTitle": "My Interviews",
+    "candidateSubtitle": "AI and human interview sessions",
+    "viewApplicant": "View applicant",
+    "notScheduled": "Not yet scheduled",
+    "completedNote": "Interview completed — awaiting recruiter decision",
+    "status": {
+      "scheduled": "Scheduled",
+      "in_progress": "In progress",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    },
+    "ai": {
+      "type": "AI Interview",
+      "start": "Start AI interview",
+      "deviceCheck": "Device check",
+      "deviceCheckDescription": "Verify your microphone, camera, and browser before starting",
+      "microphone": "Microphone",
+      "camera": "Camera",
+      "browser": "Browser",
+      "startInterview": "Begin interview",
+      "question": "Interview question",
+      "answerPlaceholder": "Type your response (mock transcript)...",
+      "nextQuestion": "Next question",
+      "finish": "Finish interview",
+      "transcript": "Live transcript",
+      "transcriptEmpty": "Your responses will appear here",
+      "complete": "Interview complete",
+      "completeDescription": "Your responses have been submitted for recruiter review.",
+      "backToInterviews": "Back to interviews",
+      "pendingReview": "Awaiting candidate completion"
+    },
+    "human": {
+      "type": "Human Interview",
+      "prepareNote": "Prepare for a structured interview with scorecard evaluation"
+    },
+    "review": {
+      "aiInterview": "AI Interview",
+      "humanInterview": "Human Interview",
+      "summary": "AI summary",
+      "transcript": "Transcript",
+      "transcriptDescription": "Full conversation record",
+      "scorecard": "Scorecard",
+      "notScored": "Not scored",
+      "status": {
+        "scheduled": "Scheduled",
+        "in_progress": "In progress",
+        "completed": "Completed",
+        "cancelled": "Cancelled"
+      }
+    },
+    "schedule": {
+      "title": "Schedule interview",
+      "employerDescription": "Propose a time for the human interview",
+      "candidateDescription": "Confirm or request a different time",
+      "date": "Date",
+      "time": "Time",
+      "duration": "{minutes} minutes",
+      "confirm": "Confirm schedule",
+      "scheduled": "Interview scheduled"
+    }
+  },
+  "agents": {
+    "inputPlaceholder": "Ask your agent...",
+    "actionCards": "Suggested actions",
+    "approve": "Approve",
+    "dismiss": "Dismiss",
+    "fallbackResponse": "I can help with job fit, skill gaps, pipeline status, and next steps. Try one of the quick prompts above.",
+    "actionStatus": {
+      "suggested": "Suggested",
+      "approved": "Approved",
+      "dismissed": "Dismissed",
+      "completed": "Completed"
+    },
+    "activity": {
+      "title": "Activity history",
+      "description": "Recent agent actions and insights"
+    },
+    "career": {
+      "title": "Career Agent",
+      "subtitle": "Understand fit, gaps, and next steps for your career",
+      "prompts": {
+        "fit": "How well do I fit the Senior Accountant role?",
+        "gaps": "What skill gaps should I address?"
+      }
+    },
+    "hiring": {
+      "title": "Hiring Agent",
+      "subtitle": "Shortlist candidates and manage your hiring pipeline",
+      "prompts": {
+        "shortlist": "Who should I shortlist for Senior Accountant?",
+        "pipeline": "Summarize my hiring pipeline"
+      }
+    }
+  },
+  "trust": {
+    "employerVerified": "Employer verified on GoJobs",
+    "trustPending": "Trust check pending",
+    "notVerified": "Not yet verified",
+    "report": {
+      "reportJob": "Report job",
+      "title": "Report this job",
+      "description": "Help keep GoJobs safe. Report suspicious listings for {job}.",
+      "reason": "Reason",
+      "selectReason": "Select a reason",
+      "reasons": {
+        "scam": "Suspected scam",
+        "misleadingSalary": "Misleading salary",
+        "fakeCompany": "Fake or impersonated company",
+        "other": "Other"
+      },
+      "details": "Additional details",
+      "detailsPlaceholder": "Describe the issue...",
+      "submit": "Submit report",
+      "submitted": "Report submitted — thank you"
+    },
+    "scam": {
+      "warningTitle": "Exercise caution",
+      "warningDescription": "This employer's trust check is pending. Verify details before sharing personal information or making payments.",
+      "blockedTitle": "Listing flagged",
+      "blockedDescription": "This job or employer has been flagged. Proceed with extreme caution or avoid applying."
+    },
+    "reputation": {
+      "title": "Employer reputation",
+      "jobsPosted": "Jobs posted",
+      "responseRate": "Response rate",
+      "avgReview": "Avg. review time",
+      "employerChecksNote": "Employer Checks are performed by the hiring company — GoJobs does not verify individual candidates.",
+      "flags": {
+        "responsive": "Responsive employer",
+        "verified_employer": "Employer verified on GoJobs"
+      }
+    }
+  },
+  "campus": {
+    "title": "Campus Hiring",
+    "subtitle": "University partnerships, internships, and graduate programs across Bangladesh",
+    "universities": "Partner universities",
+    "internships": "{count} internships",
+    "graduatePrograms": "{count} graduate programs",
+    "featuredInternships": "Featured internships & programs"
+  },
+  "frontline": {
+    "title": "Frontline Hiring",
+    "subtitle": "চাকরি খুঁজুন সহজে — ফোন দিয়ে শুরু করুন",
+    "step": "Step {current} of {total}",
+    "phoneStep": "ফোন নম্বর",
+    "phoneDescription": "আপনার ফোন নম্বর দিন — আমরা আপনাকে কল করব",
+    "phone": "মোবাইল নম্বর",
+    "name": "আপনার নাম",
+    "namePlaceholder": "আপনার পূর্ণ নাম",
+    "continue": "এগিয়ে যান",
+    "shiftStep": "শিফট পছন্দ",
+    "shiftDescription": "কোন শিফটে কাজ করতে চান?",
+    "shifts": {
+      "morning": "সকাল (৬টা–২টা)",
+      "afternoon": "বিকেল (২টা–১০টা)",
+      "night": "রাত (১০টা–৬টা)"
+    },
+    "availabilityStep": "উপলব্ধতা",
+    "availabilityDescription": "আপনি কখন কাজ শুরু করতে পারবেন?",
+    "availableNow": "এখনই কাজ করতে পারি",
+    "complete": "সম্পন্ন",
+    "completed": "প্রোফাইল তৈরি হয়েছে",
+    "successTitle": "সফল!",
+    "successDescription": "আপনার প্রোফাইল সংরক্ষিত হয়েছে। শীঘ্রই আপনার সাথে যোগাযোগ করা হবে।"
+  },
+  "enterprise": {
+    "title": "Enterprise settings",
+    "subtitle": "SSO, API access, webhooks, and team permissions",
+    "tabs": {
+      "sso": "SSO",
+      "api": "API",
+      "webhooks": "Webhooks",
+      "team": "Team"
+    },
+    "sso": {
+      "title": "Single sign-on",
+      "description": "Connect your identity provider for secure team access",
+      "provider": "Provider",
+      "domain": "Email domain",
+      "configure": "Configure SSO"
+    },
+    "api": {
+      "title": "API keys",
+      "description": "Programmatic access to GoJobs hiring data",
+      "rotate": "Rotate key"
+    },
+    "webhooks": {
+      "title": "Webhooks",
+      "description": "Receive real-time events in your systems",
+      "url": "Endpoint URL",
+      "save": "Save webhook"
+    },
+    "team": {
+      "title": "Team permissions",
+      "description": "Manage who can access employer tools",
+      "invite": "Invite team member",
+      "roles": {
+        "admin": "Admin",
+        "recruiter": "Recruiter",
+        "viewer": "Viewer"
+      }
+    }
+  }
+}
