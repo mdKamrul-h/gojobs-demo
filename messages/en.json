@@ -22,7 +22,15 @@
     "confirm": "Confirm",
     "close": "Close",
     "saved": "Saved successfully",
-    "upload": "Upload"
+    "upload": "Upload",
+    "skipToContent": "Skip to content",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "more": "More",
+    "apply": "Apply",
+    "unsave": "Unsave",
+    "loginToSave": "Log in to save jobs",
+    "mustHave": "Must have"
   },
   "nav": {
     "jobs": "Jobs",
@@ -36,7 +44,8 @@
     "more": "More",
     "campus": "Campus Hiring",
     "frontline": "Frontline Jobs",
-    "pricing": "Pricing"
+    "pricing": "Pricing",
+    "home": "Home"
   },
   "footer": {
     "about": "About GoJobs",
@@ -46,7 +55,11 @@
     "legal": "Legal",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "copyright": "© {year} GoJobs. All rights reserved."
+    "copyright": "© {year} GoJobs. All rights reserved.",
+    "browseJobs": "Browse Jobs",
+    "careerPassport": "Career Passport",
+    "postAJob": "Post a Job",
+    "employerDashboard": "Employer Dashboard"
   },
   "roles": {
     "public": "Public",
@@ -67,7 +80,36 @@
     "browseCategories": "Browse by Category",
     "browseLocations": "Browse by Location",
     "candidateCta": "Build your Career Passport",
-    "employerCta": "Post a job"
+    "employerCta": "Post a job",
+    "proofLine": "{jobs} open roles · {cities} cities · {employers} verified employers",
+    "howItWorks": "How GoJobs works",
+    "howCandidateTitle": "For candidates",
+    "howEmployerTitle": "For employers",
+    "howCandidateStep1Title": "Build your Passport",
+    "howCandidateStep1Desc": "Add skills, experience, and evidence once.",
+    "howCandidateStep2Title": "Get matched",
+    "howCandidateStep2Desc": "See roles that overlap with what you can actually do.",
+    "howCandidateStep3Title": "Apply with proof",
+    "howCandidateStep3Desc": "Send a stronger application in a few taps.",
+    "howEmployerStep1Title": "Post a job",
+    "howEmployerStep1Desc": "Describe the role and must-have requirements.",
+    "howEmployerStep2Title": "Review matches",
+    "howEmployerStep2Desc": "See overlap, evidence, and assessment results.",
+    "howEmployerStep3Title": "Interview & hire",
+    "howEmployerStep3Desc": "Move the right people through your pipeline.",
+    "candidateCtaAction": "Build your Passport",
+    "candidateCtaBenefit": "Reuse one profile to apply faster with evidence.",
+    "employerCtaAction": "Post a job",
+    "employerCtaBenefit": "Reach candidates who already match the role.",
+    "featuredEmployers": "Trusted employers",
+    "searchRoleLabel": "Role or skill",
+    "searchLocationLabel": "City or district",
+    "searchRolePlaceholder": "Accountant, software, sales…",
+    "searchLocationPlaceholder": "Select a location",
+    "popularSearches": "Popular searches",
+    "chipAccountant": "Accountant",
+    "chipSoftware": "Software",
+    "allLocations": "All locations"
   },
   "jobs": {
     "title": "Job Search",
@@ -110,7 +152,15 @@
     "hardRequirements": "Must-have requirements",
     "softRequirements": "Nice-to-have requirements",
     "required": "Required",
+    "mustHave": "Must have",
     "preferred": "Preferred",
+    "showFilters": "Filters",
+    "searchKeywordLabel": "Search jobs",
+    "saveJob": "Save job",
+    "unsaveJob": "Remove from saved",
+    "savedToast": "Job saved",
+    "unsavedToast": "Job removed from saved",
+    "apply": "Apply",
     "relatedJobs": "Related jobs",
     "applyGuest": "Apply as Guest",
     "applyPassport": "Apply with Career Passport",
@@ -203,7 +253,21 @@
     "referenceId": "Your reference ID",
     "successNote": "Save this reference ID to track your application. The employer will review your submission shortly.",
     "createAccount": "Create a Career Passport",
-    "backToJob": "Back to job"
+    "backToJob": "Back to job",
+    "contactAndCv": "Contact and CV",
+    "contactAndCvDesc": "Add your phone and CV. Email is optional.",
+    "emailOptional": "Email (optional)",
+    "coverNoteOptional": "Cover note (optional)",
+    "applyAsGuest": "Apply as guest",
+    "applyWithPassport": "Apply with Career Passport",
+    "applyChoiceDesc": "Choose how you want to apply. Both options go to the same employer.",
+    "validation": {
+      "nameRequired": "Name is required",
+      "emailInvalid": "Enter a valid email, or leave it blank",
+      "phoneRequired": "Enter a valid Bangladesh phone number (e.g. 017XXXXXXXX)",
+      "consentRequired": "You must agree to continue",
+      "fieldRequired": "This field is required"
+    }
   },
   "evidence": {
     "candidate_provided": "Candidate provided",
@@ -257,7 +321,9 @@
       "saved": "Saved Jobs",
       "onboarding": "Onboarding",
       "interviews": "Interviews",
-      "agent": "Career Agent"
+      "agent": "Career Agent",
+      "home": "Home",
+      "more": "More"
     },
     "dashboard": {
       "title": "Candidate Dashboard",
@@ -272,7 +338,18 @@
       "quickActions": "Quick actions",
       "editPassport": "Edit Career Passport",
       "viewApplications": "View applications",
-      "completeOnboarding": "Complete onboarding"
+      "completeOnboarding": "Complete onboarding",
+      "missingFields": "Still missing",
+      "missing": {
+        "headline": "Add a professional headline",
+        "summary": "Write a short summary",
+        "phone": "Add your phone number",
+        "email": "Add your email",
+        "experience": "Add work experience",
+        "education": "Add education",
+        "skills": "Add at least 3 skills",
+        "desiredRoles": "Add desired roles"
+      }
     },
     "passport": {
       "title": "Career Passport",
@@ -446,7 +523,11 @@
       "interviews": "Interviews",
       "agent": "Hiring Agent",
       "enterprise": "Enterprise",
-      "postJob": "Post Job"
+      "postJob": "Post Job",
+      "home": "Home",
+      "jobs": "Jobs",
+      "talent": "Talent",
+      "more": "More"
     },
     "guard": {
       "title": "Recruiter access required",
@@ -1081,28 +1162,30 @@
   },
   "frontline": {
     "title": "Frontline Hiring",
-    "subtitle": "চাকরি খুঁজুন সহজে — ফোন দিয়ে শুরু করুন",
+    "subtitle": "Find work quickly — start with your phone number",
     "step": "Step {current} of {total}",
-    "phoneStep": "ফোন নম্বর",
-    "phoneDescription": "আপনার ফোন নম্বর দিন — আমরা আপনাকে কল করব",
-    "phone": "মোবাইল নম্বর",
-    "name": "আপনার নাম",
-    "namePlaceholder": "আপনার পূর্ণ নাম",
-    "continue": "এগিয়ে যান",
-    "shiftStep": "শিফট পছন্দ",
-    "shiftDescription": "কোন শিফটে কাজ করতে চান?",
+    "phoneStep": "Phone number",
+    "phoneDescription": "Enter your mobile number — we will call you",
+    "phone": "Mobile number",
+    "name": "Your name",
+    "namePlaceholder": "Your full name",
+    "continue": "Continue",
+    "shiftStep": "Shift preference",
+    "shiftDescription": "Which shifts can you work?",
     "shifts": {
-      "morning": "সকাল (৬টা–২টা)",
-      "afternoon": "বিকেল (২টা–১০টা)",
-      "night": "রাত (১০টা–৬টা)"
+      "morning": "Morning (6am–2pm)",
+      "afternoon": "Afternoon (2pm–10pm)",
+      "night": "Night (10pm–6am)"
     },
-    "availabilityStep": "উপলব্ধতা",
-    "availabilityDescription": "আপনি কখন কাজ শুরু করতে পারবেন?",
-    "availableNow": "এখনই কাজ করতে পারি",
-    "complete": "সম্পন্ন",
-    "completed": "প্রোফাইল তৈরি হয়েছে",
-    "successTitle": "সফল!",
-    "successDescription": "আপনার প্রোফাইল সংরক্ষিত হয়েছে। শীঘ্রই আপনার সাথে যোগাযোগ করা হবে।"
+    "availabilityStep": "Availability",
+    "availabilityDescription": "When can you start work?",
+    "availableNow": "I can start now",
+    "complete": "Finish",
+    "completed": "Profile created",
+    "successTitle": "You're in",
+    "successDescription": "Your frontline profile is saved. Browse matching jobs or wait for a call.",
+    "browseJobs": "Browse jobs",
+    "matchingJobs": "Jobs that may fit"
   },
   "enterprise": {
     "title": "Enterprise settings",

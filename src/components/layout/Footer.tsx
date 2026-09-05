@@ -19,12 +19,12 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
                 <Link href="/jobs" className="hover:text-foreground">
-                  Browse Jobs
+                  {t("browseJobs")}
                 </Link>
               </li>
               <li>
                 <Link href="/candidate/onboarding" className="hover:text-foreground">
-                  Career Passport
+                  {t("careerPassport")}
                 </Link>
               </li>
             </ul>
@@ -34,12 +34,12 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
                 <Link href="/employer/onboarding" className="hover:text-foreground">
-                  Post a Job
+                  {t("postAJob")}
                 </Link>
               </li>
               <li>
                 <Link href="/employer" className="hover:text-foreground">
-                  Employer Dashboard
+                  {t("employerDashboard")}
                 </Link>
               </li>
             </ul>

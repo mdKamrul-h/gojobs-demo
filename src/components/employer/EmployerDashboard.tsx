@@ -77,6 +77,22 @@ export function EmployerDashboard({ locale }: { locale: string }) {
     load();
   }, [companyId]);
 
+  useEffect(() => {
+    if (loading) return;
+
+    function scrollToOpenJobs() {
+      if (window.location.hash !== "#open-jobs") return;
+      document.getElementById("open-jobs")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+
+    scrollToOpenJobs();
+    window.addEventListener("hashchange", scrollToOpenJobs);
+    return () => window.removeEventListener("hashchange", scrollToOpenJobs);
+  }, [loading]);
+
   if (loading) return <LoadingState />;
 
   return (
@@ -99,17 +115,33 @@ export function EmployerDashboard({ locale }: { locale: string }) {
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <FunnelCard icon={Users} label={t("funnel.total")} value={funnel.total} />
-        <FunnelCard icon={TrendingUp} label={t("funnel.matched50")} value={funnel.matched50} />
+        <FunnelCard
+          icon={Users}
+          label={t("funnel.total")}
+          value={funnel.total}
+          href={jobs[0] ? `/employer/jobs/${jobs[0].id}/applicants` : undefined}
+        />
+        <FunnelCard
+          icon={TrendingUp}
+          label={t("funnel.matched50")}
+          value={funnel.matched50}
+          href={jobs[0] ? `/employer/jobs/${jobs[0].id}/applicants?match=50` : undefined}
+        />
         <FunnelCard
           icon={ClipboardCheck}
           label={t("funnel.assessmentsDone")}
           value={funnel.assessmentsDone}
+          href="/employer/assessments"
         />
-        <FunnelCard icon={Star} label={t("funnel.recommended")} value={funnel.recommended} />
+        <FunnelCard
+          icon={Star}
+          label={t("funnel.recommended")}
+          value={funnel.recommended}
+          href={jobs[0] ? `/employer/jobs/${jobs[0].id}/applicants?match=70` : undefined}
+        />
       </div>
 
-      <Card>
+        <Card id="open-jobs" className="scroll-mt-28">
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Briefcase className="h-5 w-5" />
@@ -137,13 +169,15 @@ function FunnelCard({
   icon: Icon,
   label,
   value,
+  href,
 }: {
   icon: React.ComponentType<{ className?: string }>;
   label: string;
   value: number;
+  href?: string;
 }) {
-  return (
-    <Card>
+  const inner = (
+    <Card className={href ? "h-full transition-colors hover:bg-muted/40" : undefined}>
       <CardContent className="pt-6">
         <div className="flex items-center gap-3">
           <div className="rounded-lg bg-primary/10 p-2">
@@ -157,6 +191,9 @@ function FunnelCard({
       </CardContent>
     </Card>
   );
+
+  if (!href) return inner;
+  return <Link href={href} className="block">{inner}</Link>;
 }
 
 function JobRow({

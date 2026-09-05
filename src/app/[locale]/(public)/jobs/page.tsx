@@ -5,6 +5,7 @@ import {
   JobFilters,
   JobSearchBar,
   JobPagination,
+  JobsMobileFilters,
 } from "@/components/marketplace";
 import { EmptyState } from "@/components/shared";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -81,13 +82,16 @@ export default async function JobsPage({ params, searchParams }: Props) {
       </div>
 
       <div className="grid gap-6 lg:grid-cols-[280px_1fr]">
-        <aside>
+        <aside className="hidden lg:block">
           <Suspense fallback={<Skeleton className="h-96 w-full" />}>
             <JobFilters />
           </Suspense>
         </aside>
 
         <div className="space-y-6">
+          <Suspense fallback={null}>
+            <JobsMobileFilters />
+          </Suspense>
           <p className="text-sm text-muted-foreground">
             {t("resultsCount", { count: allJobs.length })}
           </p>

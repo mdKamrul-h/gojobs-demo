@@ -6,8 +6,11 @@ import {
   HeroSearch,
   JobCard,
   BrowseSections,
+  HowGoJobsWorks,
+  FeaturedEmployers,
 } from "@/components/marketplace";
 import { getFeaturedJobsAsync } from "@/lib/mock/services/jobs";
+import { getMarketplaceStats } from "@/lib/mock/services/marketplace-stats";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -18,7 +21,10 @@ export default async function HomePage({ params }: Props) {
   setRequestLocale(locale);
   const t = await getTranslations();
 
-  const featuredJobs = await getFeaturedJobsAsync();
+  const [featuredJobs, stats] = await Promise.all([
+    getFeaturedJobsAsync(),
+    Promise.resolve(getMarketplaceStats()),
+  ]);
 
   return (
     <div>
@@ -30,9 +36,18 @@ export default async function HomePage({ params }: Props) {
           <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
             {t("home.heroSubtitle")}
           </p>
+          <p className="mx-auto mt-3 max-w-2xl text-sm text-muted-foreground">
+            {t("home.proofLine", {
+              jobs: stats.openRoles,
+              cities: stats.cities,
+              employers: stats.verifiedEmployers,
+            })}
+          </p>
           <HeroSearch />
         </div>
       </section>
+
+      <HowGoJobsWorks />
 
       <section className="container mx-auto px-4 py-12">
         <div className="mb-6 flex items-center justify-between">
@@ -48,6 +63,8 @@ export default async function HomePage({ params }: Props) {
         </div>
       </section>
 
+      <FeaturedEmployers companies={stats.featuredEmployers} />
+
       <BrowseSections />
 
       <section className="border-t bg-muted/30 py-12">
@@ -56,9 +73,10 @@ export default async function HomePage({ params }: Props) {
             <CardHeader>
               <CardTitle>{t("home.candidateCta")}</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="space-y-3">
+              <p className="text-sm text-muted-foreground">{t("home.candidateCtaBenefit")}</p>
               <Link href="/candidate/onboarding">
-                <Button>{t("common.learnMore")}</Button>
+                <Button>{t("home.candidateCtaAction")}</Button>
               </Link>
             </CardContent>
           </Card>
@@ -66,9 +84,10 @@ export default async function HomePage({ params }: Props) {
             <CardHeader>
               <CardTitle>{t("home.employerCta")}</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="space-y-3">
+              <p className="text-sm text-muted-foreground">{t("home.employerCtaBenefit")}</p>
               <Link href="/employer/onboarding">
-                <Button variant="outline">{t("common.learnMore")}</Button>
+                <Button variant="outline">{t("home.employerCtaAction")}</Button>
               </Link>
             </CardContent>
           </Card>

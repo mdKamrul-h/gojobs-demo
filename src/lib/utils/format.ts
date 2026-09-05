@@ -1,3 +1,5 @@
+import { formatDistanceToNow } from "date-fns";
+import { bn, enUS } from "date-fns/locale";
 import type { SalaryRange } from "@/lib/types";
 
 export function formatBDT(amount: number, locale = "en-BD"): string {
@@ -42,4 +44,18 @@ export function formatSalaryRangeBn(salary: SalaryRange): string {
 
 export function isGeneralAssessmentEligible(matchScore: number): boolean {
   return matchScore >= 50;
+}
+
+export function formatPostedAgo(date: Date | string, locale?: string): string {
+  return formatDistanceToNow(new Date(date), {
+    addSuffix: true,
+    locale: locale === "bn" ? bn : enUS,
+  });
+}
+
+export function companyInitials(name: string): string {
+  const parts = name.trim().split(/\s+/).filter(Boolean);
+  if (parts.length === 0) return "?";
+  if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
+  return `${parts[0][0]}${parts[1][0]}`.toUpperCase();
 }

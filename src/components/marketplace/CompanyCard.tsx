@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import { Building2, MapPin, Users } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -14,7 +14,8 @@ interface CompanyCardProps {
 
 export async function CompanyCard({ company, openJobsCount }: CompanyCardProps) {
   const t = await getTranslations("companies");
-  const location = getLocationDisplay(company.location);
+  const locale = await getLocale();
+  const location = getLocationDisplay(company.location, locale);
 
   return (
     <Link href={`/companies/${company.slug}`}>

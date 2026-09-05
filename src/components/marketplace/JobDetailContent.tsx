@@ -4,8 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { SalaryDisplay } from "@/components/shared";
 import { getLocationDisplay } from "@/lib/mock/fixtures/locations";
+import { formatPostedAgo } from "@/lib/utils/format";
 import type { Job } from "@/lib/types";
-import { formatDistanceToNow } from "date-fns";
 
 interface JobDetailContentProps {
   job: Job;
@@ -19,8 +19,8 @@ export async function JobDetailContent({
   locale,
 }: JobDetailContentProps) {
   const t = await getTranslations("jobs");
-  const location = getLocationDisplay(job.location);
-  const postedAgo = formatDistanceToNow(new Date(job.postedAt), { addSuffix: true });
+  const location = getLocationDisplay(job.location, locale);
+  const postedAgo = formatPostedAgo(job.postedAt, locale);
 
   return (
     <div className="space-y-6">
@@ -65,8 +65,11 @@ export async function JobDetailContent({
           <ul className="mt-2 space-y-2">
             {job.hardRequirements.map((req) => (
               <li key={req.id} className="flex items-start gap-2 text-sm">
-                <Badge variant="destructive" className="shrink-0 text-xs">
-                  {t("required")}
+                <Badge
+                  variant="outline"
+                  className="shrink-0 border-border bg-muted/50 text-xs font-medium text-muted-foreground"
+                >
+                  {t("mustHave")}
                 </Badge>
                 <span>{req.label}</span>
               </li>

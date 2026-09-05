@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Globe, MapPin, Users, Calendar } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { TrustIndicator } from "@/components/shared";
@@ -12,7 +12,8 @@ interface CompanyProfileProps {
 
 export async function CompanyProfile({ company, openJobsCount }: CompanyProfileProps) {
   const t = await getTranslations("companies");
-  const location = getLocationDisplay(company.location);
+  const locale = await getLocale();
+  const location = getLocationDisplay(company.location, locale);
 
   return (
     <div className="space-y-6">

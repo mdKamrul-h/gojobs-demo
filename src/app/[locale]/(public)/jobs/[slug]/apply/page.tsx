@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
-import { GuestApplyForm } from "@/components/marketplace";
+import { ApplyPathChoice, GuestApplyForm } from "@/components/marketplace";
 import { getJobBySlugAsync } from "@/lib/mock/services/jobs";
 import { getCompanyById } from "@/lib/mock/fixtures/companies";
 
@@ -22,6 +22,7 @@ export default async function GuestApplyPage({ params }: Props) {
       {company && (
         <p className="mb-4 text-sm text-muted-foreground">{company.name}</p>
       )}
+      <ApplyPathChoice />
       <GuestApplyForm job={job} jobSlug={slug} />
     </div>
   );

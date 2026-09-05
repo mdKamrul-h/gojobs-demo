@@ -1,18 +1,24 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Phone, Clock, MapPin } from "lucide-react";
+import { Link } from "@/i18n/routing";
 import { PageContainer } from "@/components/shared/PageContainer";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { toast } from "sonner";
+import { getJobs } from "@/lib/mock/services/jobs";
+import type { Job } from "@/lib/types";
+import { cn } from "@/lib/utils";
 
 const SHIFTS = ["morning", "afternoon", "night"] as const;
+const fieldClass = "h-11 text-base";
+const tapClass = "h-11 min-w-[44px] text-base";
 
 export function FrontlineOnboarding() {
   const t = useTranslations("frontline");
@@ -21,9 +27,17 @@ export function FrontlineOnboarding() {
   const [name, setName] = useState("");
   const [shifts, setShifts] = useState<string[]>([]);
   const [available, setAvailable] = useState(true);
+  const [matches, setMatches] = useState<Job[]>([]);
 
   const totalSteps = 3;
   const progress = (step / totalSteps) * 100;
+
+  useEffect(() => {
+    if (step !== 4) return;
+    getJobs(undefined, { field: "date", direction: "desc" }).then((jobs) => {
+      setMatches(jobs.slice(0, 3));
+    });
+  }, [step]);
 
   function handleComplete() {
     localStorage.setItem(
@@ -35,14 +49,16 @@ export function FrontlineOnboarding() {
   }
 
   return (
-    <PageContainer className="max-w-lg mx-auto space-y-6">
+    <PageContainer className="mx-auto max-w-lg space-y-6">
       <div className="text-center">
-        <h1 className="text-2xl font-bold">{t("title")}</h1>
-        <p className="mt-1 text-muted-foreground">{t("subtitle")}</p>
+        <h1 className="text-3xl font-bold">{t("title")}</h1>
+        <p className="mt-2 text-base text-muted-foreground">{t("subtitle")}</p>
         {step <= totalSteps && (
           <>
             <Progress value={progress} className="mt-4 h-2" />
-            <p className="mt-2 text-sm text-muted-foreground">{t("step", { current: step, total: totalSteps })}</p>
+            <p className="mt-2 text-sm text-muted-foreground">
+              {t("step", { current: step, total: totalSteps })}
+            </p>
           </>
         )}
       </div>
@@ -50,27 +66,39 @@ export function FrontlineOnboarding() {
       {step === 1 && (
         <Card>
           <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-base">
-              <Phone className="h-4 w-4" />
+            <CardTitle className="flex items-center gap-2 text-lg">
+              <Phone className="h-5 w-5" />
               {t("phoneStep")}
             </CardTitle>
-            <CardDescription>{t("phoneDescription")}</CardDescription>
+            <CardDescription className="text-base">{t("phoneDescription")}</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-2">
-              <Label>{t("phone")}</Label>
+              <Label htmlFor="frontline-phone" className="text-base">
+                {t("phone")}
+              </Label>
               <Input
+                id="frontline-phone"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 placeholder="01XXXXXXXXX"
                 type="tel"
+                className={fieldClass}
               />
             </div>
             <div className="space-y-2">
-              <Label>{t("name")}</Label>
-              <Input value={name} onChange={(e) => setName(e.target.value)} placeholder={t("namePlaceholder")} />
+              <Label htmlFor="frontline-name" className="text-base">
+                {t("name")}
+              </Label>
+              <Input
+                id="frontline-name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder={t("namePlaceholder")}
+                className={fieldClass}
+              />
             </div>
-            <Button onClick={() => setStep(2)} disabled={!phone || !name}>
+            <Button className={tapClass} onClick={() => setStep(2)} disabled={!phone || !name}>
               {t("continue")}
             </Button>
           </CardContent>
@@ -80,16 +108,17 @@ export function FrontlineOnboarding() {
       {step === 2 && (
         <Card>
           <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-base">
-              <Clock className="h-4 w-4" />
+            <CardTitle className="flex items-center gap-2 text-lg">
+              <Clock className="h-5 w-5" />
               {t("shiftStep")}
             </CardTitle>
-            <CardDescription>{t("shiftDescription")}</CardDescription>
+            <CardDescription className="text-base">{t("shiftDescription")}</CardDescription>
           </CardHeader>
-          <CardContent className="space-y-4">
+          <CardContent className="space-y-3">
             {SHIFTS.map((shift) => (
-              <div key={shift} className="flex items-center gap-2">
+              <div key={shift} className="flex min-h-11 items-center gap-3">
                 <Checkbox
+                  id={`shift-${shift}`}
                   checked={shifts.includes(shift)}
                   onCheckedChange={(checked) => {
                     setShifts((prev) =>
@@ -97,10 +126,12 @@ export function FrontlineOnboarding() {
                     );
                   }}
                 />
-                <Label>{t(`shifts.${shift}`)}</Label>
+                <Label htmlFor={`shift-${shift}`} className="text-base">
+                  {t(`shifts.${shift}`)}
+                </Label>
               </div>
             ))}
-            <Button onClick={() => setStep(3)} disabled={shifts.length === 0}>
+            <Button className={tapClass} onClick={() => setStep(3)} disabled={shifts.length === 0}>
               {t("continue")}
             </Button>
           </CardContent>
@@ -110,27 +141,52 @@ export function FrontlineOnboarding() {
       {step === 3 && (
         <Card>
           <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-base">
-              <MapPin className="h-4 w-4" />
+            <CardTitle className="flex items-center gap-2 text-lg">
+              <MapPin className="h-5 w-5" />
               {t("availabilityStep")}
             </CardTitle>
-            <CardDescription>{t("availabilityDescription")}</CardDescription>
+            <CardDescription className="text-base">{t("availabilityDescription")}</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
-            <div className="flex items-center gap-2">
-              <Checkbox checked={available} onCheckedChange={(c) => setAvailable(!!c)} />
-              <Label>{t("availableNow")}</Label>
+            <div className="flex min-h-11 items-center gap-3">
+              <Checkbox
+                id="available-now"
+                checked={available}
+                onCheckedChange={(c) => setAvailable(!!c)}
+              />
+              <Label htmlFor="available-now" className="text-base">
+                {t("availableNow")}
+              </Label>
             </div>
-            <Button onClick={handleComplete}>{t("complete")}</Button>
+            <Button className={tapClass} onClick={handleComplete}>
+              {t("complete")}
+            </Button>
           </CardContent>
         </Card>
       )}
 
       {step === 4 && (
-        <Card className="text-center">
-          <CardContent className="pt-8 space-y-2">
-            <h2 className="text-xl font-bold">{t("successTitle")}</h2>
-            <p className="text-muted-foreground">{t("successDescription")}</p>
+        <Card>
+          <CardContent className="space-y-4 pt-8 text-center">
+            <h2 className="text-2xl font-bold">{t("successTitle")}</h2>
+            <p className="text-base text-muted-foreground">{t("successDescription")}</p>
+            <Link href="/jobs" className={cn(buttonVariants(), tapClass, "inline-flex")}>
+              {t("browseJobs")}
+            </Link>
+            {matches.length > 0 && (
+              <div className="space-y-2 text-left">
+                <p className="text-sm font-medium">{t("matchingJobs")}</p>
+                {matches.map((job) => (
+                  <Link
+                    key={job.id}
+                    href={`/jobs/${job.slug}`}
+                    className="block min-h-11 rounded-md border px-3 py-3 text-sm font-medium hover:bg-muted/50"
+                  >
+                    {job.title}
+                  </Link>
+                ))}
+              </div>
+            )}
           </CardContent>
         </Card>
       )}

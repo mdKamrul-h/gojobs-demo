@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import { useTranslations } from "next-intl";
+import { useSearchParams } from "next/navigation";
 import { Link } from "@/i18n/routing";
 import { LayoutGrid, Table2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -25,14 +26,30 @@ interface AtsBoardProps {
   locale: string;
 }
 
+function subscribeLg(onChange: () => void) {
+  const mq = window.matchMedia("(min-width: 1024px)");
+  mq.addEventListener("change", onChange);
+  return () => mq.removeEventListener("change", onChange);
+}
+
+function getLgSnapshot() {
+  return window.matchMedia("(min-width: 1024px)").matches;
+}
+
 export function AtsBoard({ jobId, locale }: AtsBoardProps) {
   const t = useTranslations("employer.ats");
+  const searchParams = useSearchParams();
   const [job, setJob] = useState<Job | null>(null);
   const [applications, setApplications] = useState<Application[]>([]);
   const [loading, setLoading] = useState(true);
-  const [view, setView] = useState<"kanban" | "table">("kanban");
+  const isLg = useSyncExternalStore(subscribeLg, getLgSnapshot, () => false);
+  const [viewOverride, setViewOverride] = useState<"kanban" | "table" | null>(null);
+  const view = viewOverride ?? (isLg ? "kanban" : "table");
   const [stageFilter, setStageFilter] = useState<ApplicationStage | "all">("all");
-  const [matchThreshold, setMatchThreshold] = useState<number>(0);
+  const [matchThreshold, setMatchThreshold] = useState<number>(() => {
+    const match = Number(searchParams.get("match") ?? 0);
+    return Number.isFinite(match) ? match : 0;
+  });
 
   const loadData = async () => {
     const j = await getEmployerJobById(jobId);
@@ -43,7 +60,19 @@ export function AtsBoard({ jobId, locale }: AtsBoardProps) {
   };
 
   useEffect(() => {
-    loadData();
+    let cancelled = false;
+    async function load() {
+      const j = await getEmployerJobById(jobId);
+      const apps = await getApplicationsByJobIdAsync(jobId);
+      if (cancelled) return;
+      setJob(j ?? null);
+      setApplications(apps.filter((a) => a.stage !== "rejected"));
+      setLoading(false);
+    }
+    void load();
+    return () => {
+      cancelled = true;
+    };
   }, [jobId]);
 
   const filtered = useMemo(() => {
@@ -83,7 +112,7 @@ export function AtsBoard({ jobId, locale }: AtsBoardProps) {
           <Button
             variant={view === "kanban" ? "default" : "outline"}
             size="sm"
-            onClick={() => setView("kanban")}
+            onClick={() => setViewOverride("kanban")}
           >
             <LayoutGrid className="h-4 w-4 mr-1" />
             {t("kanban")}
@@ -91,7 +120,7 @@ export function AtsBoard({ jobId, locale }: AtsBoardProps) {
           <Button
             variant={view === "table" ? "default" : "outline"}
             size="sm"
-            onClick={() => setView("table")}
+            onClick={() => setViewOverride("table")}
           >
             <Table2 className="h-4 w-4 mr-1" />
             {t("table")}
@@ -142,7 +171,21 @@ export function AtsBoard({ jobId, locale }: AtsBoardProps) {
         </CardContent>
       </Card>
 
-      {view === "kanban" ? (
+      {viewOverride === null ? (
+        <>
+          <div className="hidden lg:block">
+            <AtsKanban
+              jobId={jobId}
+              applications={filtered}
+              onStageChange={handleStageChange}
+              onRefresh={loadData}
+            />
+          </div>
+          <div className="lg:hidden">
+            <AtsTable jobId={jobId} applications={filtered} locale={locale} onRefresh={loadData} />
+          </div>
+        </>
+      ) : viewOverride === "kanban" ? (
         <AtsKanban
           jobId={jobId}
           applications={filtered}

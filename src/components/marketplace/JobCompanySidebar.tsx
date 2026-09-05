@@ -21,7 +21,7 @@ export async function JobCompanySidebar({
 }: JobCompanySidebarProps) {
   const t = await getTranslations("jobs");
   const tc = await getTranslations("companies");
-  const location = getLocationDisplay(company.location);
+  const location = getLocationDisplay(company.location, locale);
 
   return (
     <Card>

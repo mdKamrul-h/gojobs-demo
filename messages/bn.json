@@ -22,7 +22,15 @@
     "confirm": "নিশ্চিত করুন",
     "close": "বন্ধ",
     "saved": "সফলভাবে সংরক্ষিত",
-    "upload": "আপলোড"
+    "upload": "আপলোড",
+    "skipToContent": "মূল বিষয়ে যান",
+    "menu": "মেনু",
+    "openMenu": "মেনু খুলুন",
+    "more": "আরও",
+    "apply": "আবেদন",
+    "unsave": "সরান",
+    "loginToSave": "চাকরি সংরক্ষণ করতে লগ ইন করুন",
+    "mustHave": "অবশ্যই থাকতে হবে"
   },
   "nav": {
     "jobs": "চাকরি",
@@ -36,7 +44,8 @@
     "more": "আরও",
     "campus": "ক্যাম্পাস নিয়োগ",
     "frontline": "ফ্রন্টলাইন চাকরি",
-    "pricing": "মূল্য"
+    "pricing": "মূল্য",
+    "home": "হোম"
   },
   "footer": {
     "about": "GoJobs সম্পর্কে",
@@ -46,7 +55,11 @@
     "legal": "আইনি",
     "privacy": "গোপনীয়তা নীতি",
     "terms": "সেবার শর্তাবলী",
-    "copyright": "© {year} GoJobs. সর্বস্বত্ব সংরক্ষিত।"
+    "copyright": "© {year} GoJobs. সর্বস্বত্ব সংরক্ষিত।",
+    "browseJobs": "চাকরি দেখুন",
+    "careerPassport": "ক্যারিয়ার পাসপোর্ট",
+    "postAJob": "চাকরি পোস্ট করুন",
+    "employerDashboard": "নিয়োগকর্তা ড্যাশবোর্ড"
   },
   "roles": {
     "public": "পাবলিক",
@@ -67,7 +80,36 @@
     "browseCategories": "বিভাগ অনুযায়ী দেখুন",
     "browseLocations": "অবস্থান অনুযায়ী দেখুন",
     "candidateCta": "Career Passport তৈরি করুন",
-    "employerCta": "চাকরি পোস্ট করুন"
+    "employerCta": "চাকরি পোস্ট করুন",
+    "proofLine": "{jobs}টি খোলা পদ · {cities}টি শহর · {employers}টি যাচাইকৃত নিয়োগকর্তা",
+    "howItWorks": "GoJobs কীভাবে কাজ করে",
+    "howCandidateTitle": "প্রার্থীদের জন্য",
+    "howEmployerTitle": "নিয়োগকর্তাদের জন্য",
+    "howCandidateStep1Title": "পাসপোর্ট তৈরি করুন",
+    "howCandidateStep1Desc": "দক্ষতা, অভিজ্ঞতা ও প্রমাণ একবারই যোগ করুন।",
+    "howCandidateStep2Title": "মিল দেখুন",
+    "howCandidateStep2Desc": "আপনি যা করতে পারেন তার সাথে মিল থাকা চাকরি দেখুন।",
+    "howCandidateStep3Title": "প্রমাণসহ আবেদন",
+    "howCandidateStep3Desc": "কয়েক ট্যাপে শক্তিশালী আবেদন পাঠান।",
+    "howEmployerStep1Title": "চাকরি পোস্ট করুন",
+    "howEmployerStep1Desc": "ভূমিকা ও আবশ্যক যোগ্যতা লিখুন।",
+    "howEmployerStep2Title": "মিল পর্যালোচনা",
+    "howEmployerStep2Desc": "ওভারল্যাপ, প্রমাণ ও মূল্যায়ন দেখুন।",
+    "howEmployerStep3Title": "সাক্ষাৎকার ও নিয়োগ",
+    "howEmployerStep3Desc": "সঠিক প্রার্থীদের পাইপলাইনে এগিয়ে নিন।",
+    "candidateCtaAction": "পাসপোর্ট তৈরি করুন",
+    "candidateCtaBenefit": "একটি প্রোফাইল দিয়ে দ্রুত ও প্রমাণসহ আবেদন করুন।",
+    "employerCtaAction": "চাকরি পোস্ট করুন",
+    "employerCtaBenefit": "ভূমিকার সাথে মিল থাকা প্রার্থীদের কাছে পৌঁছান।",
+    "featuredEmployers": "বিশ্বস্ত নিয়োগকর্তা",
+    "searchRoleLabel": "পদ বা দক্ষতা",
+    "searchLocationLabel": "শহর বা জেলা",
+    "searchRolePlaceholder": "হিসাবরক্ষক, সফটওয়্যার, সেলস…",
+    "searchLocationPlaceholder": "অবস্থান বেছে নিন",
+    "popularSearches": "জনপ্রিয় অনুসন্ধান",
+    "chipAccountant": "হিসাবরক্ষক",
+    "chipSoftware": "সফটওয়্যার",
+    "allLocations": "সব অবস্থান"
   },
   "jobs": {
     "title": "চাকরি অনুসন্ধান",
@@ -110,7 +152,15 @@
     "hardRequirements": "অবশ্যই থাকতে হবে",
     "softRequirements": "আশা করা যায়",
     "required": "আবশ্যক",
+    "mustHave": "অবশ্যই থাকতে হবে",
     "preferred": "পছন্দসই",
+    "showFilters": "ফিল্টার",
+    "searchKeywordLabel": "চাকরি খুঁজুন",
+    "saveJob": "চাকরি সংরক্ষণ",
+    "unsaveJob": "সংরক্ষণ থেকে সরান",
+    "savedToast": "চাকরি সংরক্ষিত হয়েছে",
+    "unsavedToast": "সংরক্ষণ থেকে সরানো হয়েছে",
+    "apply": "আবেদন",
     "relatedJobs": "সম্পর্কিত চাকরি",
     "applyGuest": "অতিথি হিসেবে আবেদন",
     "applyPassport": "Career Passport দিয়ে আবেদন",
@@ -203,7 +253,21 @@
     "referenceId": "আপনার রেফারেন্স আইডি",
     "successNote": "আপনার আবেদন ট্র্যাক করতে এই রেফারেন্স আইডি সংরক্ষণ করুন। নিয়োগকর্তা শীঘ্রই আপনার জমা পর্যালোচনা করবেন।",
     "createAccount": "Career Passport তৈরি করুন",
-    "backToJob": "চাকরিতে ফিরে যান"
+    "backToJob": "চাকরিতে ফিরে যান",
+    "contactAndCv": "যোগাযোগ ও সিভি",
+    "contactAndCvDesc": "ফোন ও সিভি দিন। ইমেইল ঐচ্ছিক।",
+    "emailOptional": "ইমেইল (ঐচ্ছিক)",
+    "coverNoteOptional": "কভার নোট (ঐচ্ছিক)",
+    "applyAsGuest": "অতিথি হিসেবে আবেদন",
+    "applyWithPassport": "Career Passport দিয়ে আবেদন",
+    "applyChoiceDesc": "কীভাবে আবেদন করবেন বেছে নিন। দুটি পথেই একই নিয়োগকর্তার কাছে যায়।",
+    "validation": {
+      "nameRequired": "নাম আবশ্যক",
+      "emailInvalid": "সঠিক ইমেইল দিন, অথবা খালি রাখুন",
+      "phoneRequired": "সঠিক বাংলাদেশি ফোন নম্বর দিন (যেমন ০১৭XXXXXXXX)",
+      "consentRequired": "এগিয়ে যেতে সম্মতি দিন",
+      "fieldRequired": "এই ঘরটি আবশ্যক"
+    }
   },
   "evidence": {
     "candidate_provided": "প্রার্থী প্রদত্ত",
@@ -257,7 +321,9 @@
       "saved": "সংরক্ষিত চাকরি",
       "onboarding": "অনবোর্ডিং",
       "interviews": "ইন্টারভিউ",
-      "agent": "ক্যারিয়ার এজেন্ট"
+      "agent": "ক্যারিয়ার এজেন্ট",
+      "home": "হোম",
+      "more": "আরও"
     },
     "dashboard": {
       "title": "প্রার্থী ড্যাশবোর্ড",
@@ -272,7 +338,18 @@
       "quickActions": "দ্রুত কাজ",
       "editPassport": "Career Passport সম্পাদনা",
       "viewApplications": "আবেদন দেখুন",
-      "completeOnboarding": "অনবোর্ডিং সম্পূর্ণ করুন"
+      "completeOnboarding": "অনবোর্ডিং সম্পূর্ণ করুন",
+      "missingFields": "এখনো বাকি",
+      "missing": {
+        "headline": "পেশাগত শিরোনাম যোগ করুন",
+        "summary": "সংক্ষিপ্ত সারসংক্ষেপ লিখুন",
+        "phone": "ফোন নম্বর যোগ করুন",
+        "email": "ইমেইল যোগ করুন",
+        "experience": "কাজের অভিজ্ঞতা যোগ করুন",
+        "education": "শিক্ষা যোগ করুন",
+        "skills": "কমপক্ষে ৩টি দক্ষতা যোগ করুন",
+        "desiredRoles": "কাঙ্ক্ষিত পদ যোগ করুন"
+      }
     },
     "passport": {
       "title": "Career Passport",
@@ -446,7 +523,11 @@
       "interviews": "ইন্টারভিউ",
       "agent": "হায়ারিং এজেন্ট",
       "enterprise": "এন্টারপ্রাইজ",
-      "postJob": "চাকরি পোস্ট"
+      "postJob": "চাকরি পোস্ট",
+      "home": "হোম",
+      "jobs": "চাকরি",
+      "talent": "ট্যালেন্ট",
+      "more": "আরও"
     },
     "guard": {
       "title": "নিয়োগকর্তা অ্যাক্সেস প্রয়োজন",
@@ -1064,7 +1145,9 @@
     "complete": "সম্পন্ন",
     "completed": "প্রোফাইল তৈরি",
     "successTitle": "সফল!",
-    "successDescription": "প্রোফাইল সংরক্ষিত। শীঘ্রই যোগাযোগ করা হবে।"
+    "successDescription": "প্রোফাইল সংরক্ষিত। মিল থাকা চাকরি দেখুন অথবা কলের জন্য অপেক্ষা করুন।",
+    "browseJobs": "চাকরি দেখুন",
+    "matchingJobs": "মিলতে পারে এমন চাকরি"
   },
   "enterprise": {
     "title": "এন্টারপ্রাইজ সেটিংস",

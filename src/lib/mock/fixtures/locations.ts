@@ -53,22 +53,40 @@ export const divisions: Division[] = [
   },
 ];
 
-export function getLocationDisplay(location: {
-  divisionId: string;
-  districtId: string;
-  neighborhoodId?: string;
-}): { division: string; district: string; neighborhood?: string; full: string } {
+function locName(
+  item: { name: string; nameBn?: string } | undefined,
+  fallback: string,
+  locale?: string
+) {
+  if (!item) return fallback;
+  return locale === "bn" ? (item.nameBn ?? item.name) : item.name;
+}
+
+export function getLocationDisplay(
+  location: {
+    divisionId: string;
+    districtId: string;
+    neighborhoodId?: string;
+  },
+  locale?: string
+): { division: string; district: string; neighborhood?: string; full: string } {
   const division = divisions.find((d) => d.id === location.divisionId);
   const district = division?.districts.find((d) => d.id === location.districtId);
   const neighborhood = district?.neighborhoods?.find(
     (n) => n.id === location.neighborhoodId
   );
 
-  const parts = [neighborhood?.name, district?.name, division?.name].filter(Boolean);
+  const divisionName = locName(division, location.divisionId, locale);
+  const districtName = locName(district, location.districtId, locale);
+  const neighborhoodName = neighborhood
+    ? locName(neighborhood, neighborhood.name, locale)
+    : undefined;
+
+  const parts = [neighborhoodName, districtName, divisionName].filter(Boolean);
   return {
-    division: division?.name ?? location.divisionId,
-    district: district?.name ?? location.districtId,
-    neighborhood: neighborhood?.name,
+    division: divisionName,
+    district: districtName,
+    neighborhood: neighborhoodName,
     full: parts.join(", "),
   };
 }

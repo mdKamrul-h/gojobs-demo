@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -19,23 +19,29 @@ import type { Job, ScreeningQuestion } from "@/lib/types";
 
 const bdPhoneRegex = /^(\+880|880|0)?1[3-9]\d{8}$/;
 
-function createSchema(questions: ScreeningQuestion[]) {
+function createSchema(
+  questions: ScreeningQuestion[],
+  t: (key: string) => string
+) {
   const screeningShape: Record<string, z.ZodTypeAny> = {};
   for (const q of questions) {
     screeningShape[q.id] = q.required
-      ? z.string().min(1, "Required")
+      ? z.string().min(1, t("validation.fieldRequired"))
       : z.string().optional();
   }
 
   return z.object({
-    name: z.string().min(2, "Name is required"),
-    email: z.string().email("Valid email required"),
-    phone: z
+    name: z.string().min(2, t("validation.nameRequired")),
+    email: z
       .string()
-      .regex(bdPhoneRegex, "Enter a valid Bangladesh phone number (e.g. 017XXXXXXXX)"),
+      .optional()
+      .refine((v) => !v || z.string().email().safeParse(v).success, {
+        message: t("validation.emailInvalid"),
+      }),
+    phone: z.string().regex(bdPhoneRegex, t("validation.phoneRequired")),
     cvFileName: z.string().optional(),
     coverNote: z.string().optional(),
-    consent: z.boolean().refine((v) => v === true, "You must agree to continue"),
+    consent: z.boolean().refine((v) => v === true, t("validation.consentRequired")),
     screening: z.object(screeningShape),
   });
 }
@@ -47,16 +53,20 @@ interface GuestApplyFormProps {
   jobSlug: string;
 }
 
-const STEPS = ["personal", "cv", "screening", "cover", "consent"] as const;
-
 export function GuestApplyForm({ job, jobSlug }: GuestApplyFormProps) {
   const t = useTranslations("apply");
   const router = useRouter();
   const [step, setStep] = useState(0);
   const [submitting, setSubmitting] = useState(false);
-  const [cvFileName, setCvFileName] = useState<string>("");
+  const [cvFileName, setCvFileName] = useState("");
 
-  const schema = createSchema(job.screeningQuestions);
+  const hasScreening = job.screeningQuestions.length > 0;
+  const steps = useMemo(
+    () => (hasScreening ? (["contact", "screening", "review"] as const) : (["contact", "review"] as const)),
+    [hasScreening]
+  );
+
+  const schema = useMemo(() => createSchema(job.screeningQuestions, t), [job.screeningQuestions, t]);
   const form = useForm<FormValues>({
     resolver: zodResolver(schema),
     defaultValues: {
@@ -69,7 +79,8 @@ export function GuestApplyForm({ job, jobSlug }: GuestApplyFormProps) {
     },
   });
 
-  const progress = ((step + 1) / STEPS.length) * 100;
+  const progress = ((step + 1) / steps.length) * 100;
+  const currentStep = steps[step];
 
   async function handleSubmit(values: FormValues) {
     setSubmitting(true);
@@ -78,7 +89,7 @@ export function GuestApplyForm({ job, jobSlug }: GuestApplyFormProps) {
         jobId: job.id,
         guestInfo: {
           name: values.name,
-          email: values.email,
+          email: values.email ?? "",
           phone: values.phone,
           cvFileName: cvFileName || values.cvFileName,
           coverNote: values.coverNote,
@@ -95,22 +106,15 @@ export function GuestApplyForm({ job, jobSlug }: GuestApplyFormProps) {
   }
 
   function nextStep() {
-    const fieldsByStep: (keyof FormValues | `screening.${string}`)[][] = [
-      ["name", "email", "phone"],
-      [],
-      job.screeningQuestions.map((q) => `screening.${q.id}` as const),
-      [],
-      ["consent"],
-    ];
-
-    const fields = fieldsByStep[step];
-    if (fields.length === 0) {
-      setStep((s) => Math.min(s + 1, STEPS.length - 1));
-      return;
-    }
+    const fields: (keyof FormValues | `screening.${string}`)[] =
+      currentStep === "contact"
+        ? ["name", "email", "phone"]
+        : currentStep === "screening"
+          ? job.screeningQuestions.map((q) => `screening.${q.id}` as const)
+          : ["consent"];
 
     form.trigger(fields as Parameters<typeof form.trigger>[0]).then((valid) => {
-      if (valid) setStep((s) => Math.min(s + 1, STEPS.length - 1));
+      if (valid) setStep((s) => Math.min(s + 1, steps.length - 1));
     });
   }
 
@@ -129,16 +133,16 @@ export function GuestApplyForm({ job, jobSlug }: GuestApplyFormProps) {
         <p className="mt-1 text-muted-foreground">{job.title}</p>
         <Progress value={progress} className="mt-4 h-2" />
         <p className="mt-2 text-sm text-muted-foreground">
-          {t("step", { current: step + 1, total: STEPS.length })}
+          {t("step", { current: step + 1, total: steps.length })}
         </p>
       </div>
 
       <form onSubmit={form.handleSubmit(handleSubmit)}>
-        {step === 0 && (
+        {currentStep === "contact" && (
           <Card>
             <CardHeader>
-              <CardTitle>{t("personalInfo")}</CardTitle>
-              <CardDescription>{t("personalInfoDesc")}</CardDescription>
+              <CardTitle>{t("contactAndCv")}</CardTitle>
+              <CardDescription>{t("contactAndCvDesc")}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="space-y-2">
@@ -149,38 +153,27 @@ export function GuestApplyForm({ job, jobSlug }: GuestApplyFormProps) {
                 )}
               </div>
               <div className="space-y-2">
-                <Label htmlFor="email">{t("email")}</Label>
-                <Input id="email" type="email" {...form.register("email")} />
-                {form.formState.errors.email && (
-                  <p className="text-sm text-destructive">{form.formState.errors.email.message}</p>
-                )}
-              </div>
-              <div className="space-y-2">
                 <Label htmlFor="phone">{t("phone")}</Label>
                 <Input id="phone" placeholder="017XXXXXXXX" {...form.register("phone")} />
                 {form.formState.errors.phone && (
                   <p className="text-sm text-destructive">{form.formState.errors.phone.message}</p>
                 )}
               </div>
-            </CardContent>
-          </Card>
-        )}
-
-        {step === 1 && (
-          <Card>
-            <CardHeader>
-              <CardTitle>{t("cvUpload")}</CardTitle>
-              <CardDescription>{t("cvUploadDesc")}</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <label className="flex cursor-pointer flex-col items-center gap-3 rounded-lg border-2 border-dashed p-8 transition-colors hover:border-primary/50 hover:bg-muted/30">
-                <Upload className="h-10 w-10 text-muted-foreground" />
+              <div className="space-y-2">
+                <Label htmlFor="email">{t("emailOptional")}</Label>
+                <Input id="email" type="email" {...form.register("email")} />
+                {form.formState.errors.email && (
+                  <p className="text-sm text-destructive">{form.formState.errors.email.message}</p>
+                )}
+              </div>
+              <label className="flex cursor-pointer flex-col items-center gap-3 rounded-lg border-2 border-dashed p-6 transition-colors hover:border-primary/50 hover:bg-muted/30">
+                <Upload className="h-8 w-8 text-muted-foreground" />
                 <span className="text-sm font-medium">{t("uploadCv")}</span>
                 <span className="text-xs text-muted-foreground">{t("cvFormats")}</span>
                 <input type="file" accept=".pdf,.doc,.docx" className="hidden" onChange={handleCvChange} />
               </label>
               {cvFileName && (
-                <div className="mt-4 flex items-center gap-2 text-sm text-emerald-600">
+                <div className="flex items-center gap-2 text-sm text-emerald-600 dark:text-emerald-400">
                   <CheckCircle2 className="h-4 w-4" />
                   {cvFileName}
                 </div>
@@ -189,7 +182,7 @@ export function GuestApplyForm({ job, jobSlug }: GuestApplyFormProps) {
           </Card>
         )}
 
-        {step === 2 && (
+        {currentStep === "screening" && (
           <Card>
             <CardHeader>
               <CardTitle>{t("screening")}</CardTitle>
@@ -198,11 +191,11 @@ export function GuestApplyForm({ job, jobSlug }: GuestApplyFormProps) {
             <CardContent className="space-y-4">
               {job.screeningQuestions.map((q) => (
                 <div key={q.id} className="space-y-2">
-                  <Label>
+                  <Label htmlFor={`screening-${q.id}`}>
                     {q.question}
                     {q.required && <span className="text-destructive"> *</span>}
                   </Label>
-                  <Input {...form.register(`screening.${q.id}`)} />
+                  <Input id={`screening-${q.id}`} {...form.register(`screening.${q.id}`)} />
                   {form.formState.errors.screening?.[q.id] && (
                     <p className="text-sm text-destructive">
                       {(form.formState.errors.screening[q.id] as { message?: string })?.message}
@@ -214,34 +207,29 @@ export function GuestApplyForm({ job, jobSlug }: GuestApplyFormProps) {
           </Card>
         )}
 
-        {step === 3 && (
-          <Card>
-            <CardHeader>
-              <CardTitle>{t("coverNote")}</CardTitle>
-              <CardDescription>{t("coverNoteDesc")}</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Textarea
-                rows={6}
-                placeholder={t("coverNotePlaceholder")}
-                {...form.register("coverNote")}
-              />
-            </CardContent>
-          </Card>
-        )}
-
-        {step === 4 && (
+        {currentStep === "review" && (
           <Card>
             <CardHeader>
               <CardTitle>{t("reviewSubmit")}</CardTitle>
               <CardDescription>{t("reviewSubmitDesc")}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="rounded-lg bg-muted/50 p-4 text-sm space-y-1">
+              <div className="space-y-1 rounded-lg bg-muted/50 p-4 text-sm">
                 <p><strong>{t("fullName")}:</strong> {form.watch("name")}</p>
-                <p><strong>{t("email")}:</strong> {form.watch("email")}</p>
                 <p><strong>{t("phone")}:</strong> {form.watch("phone")}</p>
+                {form.watch("email") && (
+                  <p><strong>{t("email")}:</strong> {form.watch("email")}</p>
+                )}
                 {cvFileName && <p><strong>CV:</strong> {cvFileName}</p>}
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="coverNote">{t("coverNoteOptional")}</Label>
+                <Textarea
+                  id="coverNote"
+                  rows={4}
+                  placeholder={t("coverNotePlaceholder")}
+                  {...form.register("coverNote")}
+                />
               </div>
               <div className="flex items-start gap-2">
                 <Checkbox
@@ -269,7 +257,7 @@ export function GuestApplyForm({ job, jobSlug }: GuestApplyFormProps) {
           >
             {t("back")}
           </Button>
-          {step < STEPS.length - 1 ? (
+          {step < steps.length - 1 ? (
             <Button type="button" onClick={nextStep}>
               {t("next")}
             </Button>

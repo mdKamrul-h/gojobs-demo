@@ -76,7 +76,7 @@ export default async function JobDetailPage({ params }: Props) {
     <>
       <JobPostingJsonLd job={job} company={company} locale={locale} />
 
-      <div className="container py-8">
+      <div className="container py-8 pb-24 md:pb-8">
         <Breadcrumb className="mb-6">
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -95,11 +95,10 @@ export default async function JobDetailPage({ params }: Props) {
 
         <div className="mb-6">
           <JobApplyActions
+            jobId={job.id}
             jobSlug={slug}
             jobTitle={job.title}
             shareUrl={shareUrl}
-            applyGuestLabel={t("applyGuest")}
-            applyPassportLabel={t("applyPassport")}
           />
         </div>
 
